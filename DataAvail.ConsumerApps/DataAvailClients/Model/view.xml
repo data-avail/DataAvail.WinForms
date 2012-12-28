@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppView name ="DATA AVAIL">
+  <DataView parentDisplayField="CONST_NAME" saveMode="repository" childSaveMode="repository|cache">
+    <Table name="CLIENT" caption="Клиенты" itemCaption="Клиент" >
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="FIRST_NAME" caption="Имя" />
+        <Field name="LAST_NAME" caption="Фамилия" />
+        <Field name="MIDDLE_NAME" caption="Очество" />
+        <Field name="PREFIX" caption="Обращение" />
+        <Field name="SEX" caption="Пол" />
+        <Field name="BIRTH_DATE" caption="Дата рождения" />
+        <Field name="STATE" caption="Статус" />
+        <Field name="TYPE" caption="Тип" />
+        <Field name="NAME" caption="Имя" />
+        <Field name="AUX" caption="Доп. инфо" controlType="TextBoxMultiLine"/>
+        <Field name="INS_DATE" caption="Дата создания" mask="d:f"/>
+      </Fields>
+    </Table>
+    <Table name="PROJECT" caption="Проекты" itemCaption="Проект">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="CLIENT" caption="Клиент" />
+        <Field name="JIRA_ID" caption="# JIRA" />
+      </Fields>
+    </Table>
+    <Table name="SOURCE" caption="Источники" itemCaption="Источник">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="NAME" caption="Имя" />
+      </Fields>
+    </Table>
+    <Table name="REQUEST" caption="Запосы" itemCaption="Запрос">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="CLIENT" caption="Клиент" parentDisplayField="NAME"/>
+        <Field name="TYPE" caption="Тип" />
+        <Field name="SOURCE" caption="Источник запроса" parentDisplayField="NAME"/>
+        <Field name="JIRA_ID" caption="# JIRA" />
+        <Field name="DATE" caption="Дата запроса" mask="d:f"/>
+        <Field name="LINK" caption="Ссылка" />
+        <Field name="AUX" caption="Дополнительно" controlType="TextBoxMultiLine"/>
+      </Fields>
+    </Table>
+    <Table name="CONTACT" caption="Контакты" itemCaption="Контакт">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="CLIENT" caption="Клиент" parentDisplayField="NAME"/>
+        <Field name="TAG" caption="Таг" />
+        <Field name="TYPE" caption="Тип" />
+        <Field name="AUX" caption="Дополнительно" controlType="TextBoxMultiLine"/>
+      </Fields>
+    </Table>
+    <Table name="LOGIN" caption="Логины пользователя" itemCaption="Логин пользователя">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="CLIENT" caption="Клиент" parentDisplayField="NAME"/>
+        <Field name="SOURCE" caption="Тип" parentDisplayField="NAME"/>
+        <Field name="LABEL" caption="Имя" />
+      </Fields>
+    </Table>
+    <Table name="CVL" caption="Константы" itemCaption="Константа">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="TABLE_NAME" />
+        <Field name="COLUMN_NAME" />
+        <Field name="CONST_VAL" />
+        <Field name="CONST_NAME" />
+      </Fields>
+    </Table>
+    <Relations>
+      <Relation name="CONTACT_CLIENT" showChildren="true"/>
+      <Relation name="REQUEST_CLIENT" showChildren="true"/>
+      <Relation name="PROJECT_CLIENT" showChildren="true"/>
+      <Relation name="LOGIN_CLIENT" showChildren="true"/>
+    </Relations>
+  </DataView>
+  <AppView>
+    <MenuItems>
+      <MenuItem caption ="Справочники">
+        <MenuItem tableName="CLIENT" caption ="Клиенты" key="ctl,c"/>
+        <MenuItem tableName="REQUEST" caption ="Запросы" key="ctl,r"/>
+        <MenuItem tableName="LOGIN" caption ="Логины" key="ctl,l"/>
+      </MenuItem>
+      <MenuItem caption="Администрирование">
+        <MenuItem tableName="SOURCE" caption="Источники" />
+        <MenuItem tableName="CVL" caption="Kонстанты" />
+      </MenuItem>
+    </MenuItems>
+    <Keys>
+      <Key command="showItem" key="ctl,return"/>
+      <Key command="selectItem" key="return"/>
+      <Key command="addItem" key="ctl,add"/>
+      <Key command="removeItem" key="ctl,subtract"/>
+      <Key command="closeForm" key="ctl,q">
+        <KeyContext context="fkItem" key="escape;ctl,q"/>
+      </Key>
+      <Key command="saveChanges" key="ctl,s"/>
+      <Key command="rejectChanges" key="ctl,r"/>
+      <Key command="movePerv" key="ctl,left"/>
+      <Key command="moveNext" key="ctl,right"/>
+      <Key command="fkAddItem" key="ctl,add"/>
+      <Key command="fkSelectItem" key="ctl,return"/>
+      <Key command="refreshList" key="f5"/>
+      <Key command="uploadToExcel" key="f4"/>
+      <Key command="focusSearch" key="ctl,up"/>
+      <Key command="focusList" key="ctl,down"/>
+      <Key command="endEdit" key="ctl,s"/>
+      <Key command="cancelEdit" key="ctl,r"/>
+      <Key command="clone" key="ctl,c"/>
+    </Keys>
+    <Misc>
+      <AppSkin name="none"/>
+    </Misc>
+  </AppView>
+</AppView>

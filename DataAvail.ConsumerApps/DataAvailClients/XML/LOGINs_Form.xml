@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="LOGINs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>31</SplitterPosition>
+    <SrchLayout name="LOGIN">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SOURCE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="LOGIN">
+      <Form name="LOGIN">
+        <Width>513</Width>
+        <Height>411</Height>
+        <WindowState>0</WindowState>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

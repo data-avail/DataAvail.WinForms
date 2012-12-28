@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper>
+  <ModelSettings AppConnectionStringName="OrgTrackingSystemModelConnectionString" EntityFrameworkVersion="Version4" IncludeForeignKeysInModel="true">
+    <Connection ConnectionString="" Provider="System.Data.SqlClient" />
+    <Generation Template="Entity C#" DestinationFolder="">
+      <GeneratedFiles>
+        <File Name="OrgTrackingSystemModel.Designer.cs" />
+      </GeneratedFiles>
+    </Generation>
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" RemoveUnderscores="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
+      <Property RemoveUnderscores="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="True">
+      <TargetServer Server="SQL Server" ServerVersion="2008" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+    </Diagrams>
+  </ModelSettings>
+</EntityDeveloper>

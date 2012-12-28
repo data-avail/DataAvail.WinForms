@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAvail.XOP.AppContext.AppFieldContext" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAgAACBIAAAAAIAAAEAAEA=</HashCode>
+      <FileName>AppContext\AppFieldContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.AppItemContext" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEgAAQBAgAATCgCCAIRQDAAAAAAAAEAAAACAAQAAEg=</HashCode>
+      <FileName>AppContext\AppItemContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.AppContext" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAABAAAAAJEAAAAAAAACAAAAAAgAAAAAAAAEAAAAA=</HashCode>
+      <FileName>AppContext\AppContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.AppItem" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAQAAAAAWCgAAAAQACQAAAAEAAEACAgAAAAAAEg=</HashCode>
+      <FileName>AppContext\AppItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.Context" Collapsed="true">
+    <Position X="9.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppContext\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.DefaultContext" Collapsed="true">
+    <Position X="8.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppContext\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.AppContext.ChildContext" Collapsed="true">
+    <Position X="10.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppContext\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraFieldProperties" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAggIAAQAAAAAAAAAgADJAAAAKAAAkQAAAAA=</HashCode>
+      <FileName>XtraFieldProperties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraFieldPropertiesCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAGAAAABAACAAAAAIAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XtraFieldPropertiesCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOFFunctionParamMappingRules" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAUAAAAAAAAACAAAAAEAAAAAAAAAIAAAAAgAA=</HashCode>
+      <FileName>XtraObjectFunction\XOFunctionParamMappingRules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectFunction" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>XtraObjectFunction\XtraObjectFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectFunctionParameter" Collapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAABAAAIAAAAIAAAAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XtraObjectFunction\XtraObjectFunctionParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectFunctionParameters" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>XtraObjectFunction\XtraObjectFunctionParameters.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectFunctions" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XtraObjectFunction\XtraObjectFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectProperties" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAQAAAAAAAAAAAAAIGIAAAAAAAAICAEAAAAAggg=</HashCode>
+      <FileName>XtraObjectProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectPropertiesCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAABAAAAAAAAQAAAACAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>XtraObjectPropertiesCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectRelation" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAIAAIAAAAAA=</HashCode>
+      <FileName>XtraObjectRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraObjectRelationsCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>XtraObjectRelationsCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraTextFieldProperties" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>XtraTextFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XtraFieldMask" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIAAAAAAAAAAAAAAAAAAEAAAAAAQBACAAAgAAQA=</HashCode>
+      <FileName>XtraTextFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelSecurity.ModelSecApp" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelSecurity\ModelSecApp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelSecurity.ModelSecBase" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgIAAAAAAAAAAQAAAAAAQAAAAAAAAAIAAAAAAAEAA=</HashCode>
+      <FileName>ModelSecurity\ModelSecBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelSecurity.ModelSecField" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelSecurity\ModelSecField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelSecurity.ModelSecObject" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAQCAAAAAACAAAABAAAAAAAAAABAAAgAA=</HashCode>
+      <FileName>ModelSecurity\ModelSecObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewApp" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAgoAAAAAAAAAAAAAAAAgYQAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewApp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewAppItem" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAA2AAAAAAAAAAAAAABEAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewAppItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewAppItemBase" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgAAAAAIAAAAACBgAAQAAQAAAAEAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewAppItemBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewAppItems" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAACAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewAppItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewMainMenu" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAACAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewMainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XOP.ModelView.ModelViewMenuItem" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAgAACAABAAAgAgAAIBAAgAAACIAAAAAAAAg=</HashCode>
+      <FileName>ModelView\ModelViewMenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.FKFieldPropertiesBase" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAACAAAAAAAAoAAAEAAAAAAAAAAAAAAAAAAQBAAAAA=</HashCode>
+      <FileName>XOPCreator\FKFieldPropertiesBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.FKFieldPropertiesDictionary" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\FKFieldPropertiesDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.FKFieldDescriptor" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\IXOPFieldCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.FKFieldDescriptorTable" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAASAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\IXOPFieldCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.FKFieldDescriptorDictionary" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\IXOPFieldCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreator" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAIAAAABAEAAAAAAAAAICAA=</HashCode>
+      <FileName>XOPCreator\XOPCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorProviderBase&lt;O, F&gt;" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAgAAEIQAAAAAAAQAIAAAAAIAAEACCgYAAAkAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorProviderBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorCustomType.FKFieldProperties" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorCustomType\FKFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorCustomType.XOPCreatorProviderCustomType" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorCustomType\XOPCreatorProviderCustomType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorCustomType.FKDataSourceAttribute" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorCustomType\XOPCustomTypeAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorDataSet.FKFieldProperties" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorDataSet\FKFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorDataSet.XOPCreatorProviderDataSet" Collapsed="true">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAQAAAAAAAQAAAAAAAAAAAACCgIAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorDataSet\XOPCreatorProviderDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorLinq.FKFieldProperties" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorLinq\FKFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorLinq.XOPCreatorProviderDataContext" Collapsed="true">
+    <Position X="5.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAQAAAgAAAQAAAAACAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorLinq\XOPCreatorProviderDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAvail.XtraObjectProperties.XOPCreator.XOPCreatorLinq.XOPLinqAssociationAttribute" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>XOPCreator\XOPCreatorLinq\XOPLinqAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DataAvail.XtraObjectProperties.IFKFieldProperties" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQBAAAAA=</HashCode>
+      <FileName>IFKFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DataAvail.XtraObjectProperties.XOPCreator.IXOPCreatorProvider" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAEAA=</HashCode>
+      <FileName>XOPCreator\IXOPCreatorProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DataAvail.XtraObjectProperties.XOPCreator.IXOPFieldCreator" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>XOPCreator\IXOPFieldCreator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DataAvail.XtraObjectProperties.XtraFieldMaskType" Collapsed="true">
+    <Position X="16" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>XtraTextFieldProperties.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataAvail.XOP.ModelView.SaveOnExitMode" Collapsed="true">
+    <Position X="14.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ModelView\ModelViewAppItemBase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

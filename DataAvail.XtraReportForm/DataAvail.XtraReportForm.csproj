@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DD4D10F-C2B5-4012-A676-5AF0B83715FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAvail.XtraReportForm</RootNamespace>
+    <AssemblyName>DataAvail.XtraReportForm</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraReportForm.Designer.cs">
+      <DependentUpon>XtraReportForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportForm.resx">
+      <DependentUpon>XtraReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAvail.Controller\DataAvail.Controller.csproj">
+      <Project>{CFBB969A-5DF4-4A46-B324-7D06307C781C}</Project>
+      <Name>DataAvail.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Data\DataAvail.Data.csproj">
+      <Project>{B82F199A-B1DC-4496-B217-65259FF38BAC}</Project>
+      <Name>DataAvail.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Serialization\DataAvail.Serialization.csproj">
+      <Project>{BB7F9E7C-3DC7-4EA8-AB02-9232B82F7121}</Project>
+      <Name>DataAvail.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.WinUtils\DataAvail.WinUtils.csproj">
+      <Project>{C860199A-94BF-403B-A4DC-5EE28EE7194C}</Project>
+      <Name>DataAvail.WinUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XObject\DataAvail.XObject.csproj">
+      <Project>{DD5B7913-B6E9-4F5C-8416-79CAE4DAB510}</Project>
+      <Name>DataAvail.XObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraBinding\DataAvail.XtraBinding.csproj">
+      <Project>{C560D674-F54D-47D4-AFA1-5B59423C8FFA}</Project>
+      <Name>DataAvail.XtraBinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraContainerBuilder\DataAvail.XtraContainerBuilder.csproj">
+      <Project>{F14D6A38-4963-4CA5-8E92-92E06803DCBB}</Project>
+      <Name>DataAvail.XtraContainerBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraContainer\DataAvail.XtraContainer.csproj">
+      <Project>{79AAF489-1C71-41D9-81C9-E092C5EA1579}</Project>
+      <Name>DataAvail.XtraContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraEditors\DataAvail.XtraEditors.csproj">
+      <Project>{93203EF3-3656-477A-B4A7-3786CCB6EB9A}</Project>
+      <Name>DataAvail.XtraEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraFormController\DataAvail.XtraFormController.csproj">
+      <Project>{E086A62A-3D6D-4975-8064-1E6AF3020ADE}</Project>
+      <Name>DataAvail.XtraFormController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraForm\DataAvail.XtraForm.csproj">
+      <Project>{C7AB8B5B-9110-4E1C-A980-81CE1E65E33B}</Project>
+      <Name>DataAvail.XtraForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraMenu\DataAvail.XtraMenu.csproj">
+      <Project>{D84509FA-2F62-44DA-B227-E63175EABD87}</Project>
+      <Name>DataAvail.XtraMenu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

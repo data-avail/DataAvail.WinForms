@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="MainFrame">
+    <Width>1936</Width>
+    <Height>1056</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-8</LocationY>
+  </Form>
+</Root>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="V_ALL_CLIENTs">
+    <Width>1085</Width>
+    <Height>535</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-4</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>37</SplitterPosition>
+    <SrchLayout name="V_ALL_CLIENT">
+      <Edit name="CLASSIFIED">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="LABEL">
+        <Checked>true</Checked>
+        <Value>ALFA</Value>
+      </Edit>
+      <Edit name="DESCRIPTION">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SYSTYPE">
+        <Checked>false</Checked>
+        <Value>8</Value>
+      </Edit>
+      <Edit name="ORG">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="RESIDENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BANK">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISNEW">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISSOFFIT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISISSUER">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISAGENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISFIELDCONTRACTOR">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SYSTYPE_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="RESIDENT_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ORG_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BANK_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISNEW_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ISSOFFIT_LABEL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENTCODE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="USERDATE">
+        <Checked>true</Checked>
+        <Value>04-09-08:23-10-10</Value>
+      </Edit>
+      <Edit name="USERINFO">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+    </SrchLayout>
+  </Form>
+</Root>

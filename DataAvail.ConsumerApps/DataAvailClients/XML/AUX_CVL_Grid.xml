@@ -1,0 +1,28 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">false</property>
+  <property name="Columns" iskey="true" value="5">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colTABLE_NAME</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colCOLUMN_NAME</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colCONST_VAL</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Name">colCONST_NAME</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

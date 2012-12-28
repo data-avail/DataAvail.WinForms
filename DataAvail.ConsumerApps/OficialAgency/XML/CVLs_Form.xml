@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CVLs">
+    <Width>1932</Width>
+    <Height>1003</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-31</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="CVL">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TABLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="COLUMN_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_VAL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="CVL">
+      <Form name="CVL">
+        <Width>599</Width>
+        <Height>302</Height>
+        <WindowState>0</WindowState>
+        <LocationX>371</LocationX>
+        <LocationY>265</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

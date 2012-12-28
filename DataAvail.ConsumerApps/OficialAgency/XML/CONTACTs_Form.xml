@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CONTACTs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>65</SplitterPosition>
+    <SrchLayout name="CONTACT">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PERSON">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="ADDRESS">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TAG">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AUX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="CONTACT">
+      <Form name="CONTACT">
+        <Width>513</Width>
+        <Height>411</Height>
+        <WindowState>0</WindowState>
+        <LocationX>429</LocationX>
+        <LocationY>163</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

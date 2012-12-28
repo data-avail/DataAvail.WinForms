@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="TOWNs">
+    <Width>581</Width>
+    <Height>317</Height>
+    <WindowState>0</WindowState>
+    <LocationX>50</LocationX>
+    <LocationY>50</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="TOWN">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="TOWN">
+      <Form name="TOWN">
+        <Width>513</Width>
+        <Height>302</Height>
+        <WindowState>0</WindowState>
+        <LocationX>381</LocationX>
+        <LocationY>267</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

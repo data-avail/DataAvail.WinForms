@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="AUX_PERSONs">
+    <Width>665</Width>
+    <Height>487</Height>
+    <WindowState>0</WindowState>
+    <LocationX>0</LocationX>
+    <LocationY>0</LocationY>
+    <SplitterPosition>65</SplitterPosition>
+    <SrchLayout name="AUX_PERSON">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="FIRST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="LAST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="MIDDLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SEX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PREFIX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BIRTH_DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+      <Edit name="STATE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="REGION">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="AUX_PERSON">
+      <Form name="PERSON">
+        <Width>513</Width>
+        <Height>411</Height>
+        <WindowState>0</WindowState>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+        <Layout name="AUX_PERSON">
+          <Grid name="ADDRESS">
+            <Form name="ADDRESS">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>0</LocationX>
+              <LocationY>0</LocationY>
+            </Form>
+          </Grid>
+          <Grid name="CONTACT">
+            <Form name="CONTACT">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>0</LocationX>
+              <LocationY>0</LocationY>
+            </Form>
+          </Grid>
+        </Layout>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

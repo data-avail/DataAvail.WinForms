@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{124A61BF-3315-48A3-B1AF-913355FA6D72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OficialAgency</RootNamespace>
+    <AssemblyName>OficialAgency</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculators\CalculatorManager.cs" />
+    <Compile Include="Calculators\ContactCalculator.cs" />
+    <Compile Include="Calculators\DealCalculator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GenModel\Model.xml" />
+    <Content Include="GenModel\View.xml" />
+    <Content Include="Model\Model.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Model\Security.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Model\View.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\ADDRESSs_Form.xml" />
+    <Content Include="XML\ADDRESS_Grid.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\ADDRESS_Layout.xml" />
+    <Content Include="XML\AUX_ADDRESS_Grid.xml" />
+    <Content Include="XML\AUX_ADDRESS_Layout.xml" />
+    <Content Include="XML\AUX_CONTACT_Grid.xml" />
+    <Content Include="XML\AUX_CONTACT_Layout.xml" />
+    <Content Include="XML\AUX_COUNTRYs_Form.xml" />
+    <Content Include="XML\AUX_COUNTRY_Grid.xml" />
+    <Content Include="XML\AUX_COUNTRY_Layout.xml" />
+    <Content Include="XML\AUX_COUNTRY_SrchLayout.xml" />
+    <Content Include="XML\AUX_CURRENCYs_Form.xml" />
+    <Content Include="XML\AUX_CURRENCY_Grid.xml" />
+    <Content Include="XML\AUX_CURRENCY_Layout.xml" />
+    <Content Include="XML\AUX_CURRENCY_SrchLayout.xml" />
+    <Content Include="XML\AUX_CVLs_Form.xml" />
+    <Content Include="XML\AUX_CVL_Grid.xml" />
+    <Content Include="XML\AUX_CVL_Layout.xml" />
+    <Content Include="XML\AUX_CVL_SrchLayout.xml" />
+    <Content Include="XML\AUX_DEAL_STATEs_Form.xml" />
+    <Content Include="XML\AUX_DEAL_STATE_Grid.xml" />
+    <Content Include="XML\AUX_DEAL_STATE_Layout.xml" />
+    <Content Include="XML\AUX_DEAL_STATE_SrchLayout.xml" />
+    <Content Include="XML\AUX_DEAL_TYPEs_Form.xml" />
+    <Content Include="XML\AUX_DEAL_TYPE_Grid.xml" />
+    <Content Include="XML\AUX_DEAL_TYPE_Layout.xml" />
+    <Content Include="XML\AUX_DEAL_TYPE_SrchLayout.xml" />
+    <Content Include="XML\AUX_PERSONs_Form.xml" />
+    <Content Include="XML\AUX_PERSON_Grid.xml" />
+    <Content Include="XML\AUX_PERSON_Layout.xml" />
+    <Content Include="XML\AUX_PERSON_SrchLayout.xml" />
+    <Content Include="XML\CLIENTCODE_Form.xml" />
+    <Content Include="XML\CLIENTCODE_Grid.xml" />
+    <Content Include="XML\CLIENTCODE_Layout.xml" />
+    <Content Include="XML\CLIENTROLE_Form.xml" />
+    <Content Include="XML\CLIENTROLE_Grid.xml" />
+    <Content Include="XML\CLIENTROLE_Layout.xml" />
+    <Content Include="XML\CLIENTs_Form.xml" />
+    <Content Include="XML\CLIENT_Form.xml" />
+    <Content Include="XML\CLIENT_Grid.xml" />
+    <Content Include="XML\CLIENT_Layout.xml" />
+    <Content Include="XML\CLIENT_SrchLayout.xml" />
+    <Content Include="XML\CONST_SELECTORs_Form.xml" />
+    <Content Include="XML\CONST_SELECTOR_Grid.xml" />
+    <Content Include="XML\CONST_SELECTOR_Layout.xml" />
+    <Content Include="XML\CONST_SELECTOR_SrchLayout.xml" />
+    <Content Include="XML\CONTACTs_Form.xml" />
+    <Content Include="XML\CONTACT_Grid.xml" />
+    <Content Include="XML\CONTACT_Layout.xml" />
+    <Content Include="XML\COUNTRYs_Form.xml" />
+    <Content Include="XML\COUNTRY_Grid.xml" />
+    <Content Include="XML\COUNTRY_Layout.xml" />
+    <Content Include="XML\COUNTRY_SrchLayout.xml" />
+    <Content Include="XML\CURRENCYs_Form.xml" />
+    <Content Include="XML\CURRENCY_Grid.xml" />
+    <Content Include="XML\CURRENCY_Layout.xml" />
+    <Content Include="XML\CURRENCY_SrchLayout.xml" />
+    <Content Include="XML\CVLs_Form.xml" />
+    <Content Include="XML\CVL_Form.xml" />
+    <Content Include="XML\CVL_Grid.xml" />
+    <Content Include="XML\CVL_Layout.xml" />
+    <Content Include="XML\CVL_SrchLayout.xml" />
+    <Content Include="XML\DEALs_Form.xml" />
+    <Content Include="XML\DEAL_CLIENTs_Form.xml" />
+    <Content Include="XML\DEAL_CLIENT_Form.xml" />
+    <Content Include="XML\DEAL_CLIENT_Grid.xml" />
+    <Content Include="XML\DEAL_CLIENT_Layout.xml" />
+    <Content Include="XML\DEAL_CLIENT_SrchLayout.xml" />
+    <Content Include="XML\DEAL_Grid.xml" />
+    <Content Include="XML\DEAL_Layout.xml" />
+    <Content Include="XML\DEAL_SrchLayout.xml" />
+    <Content Include="XML\DEAL_STATEs_Form.xml" />
+    <Content Include="XML\DEAL_STATE_Grid.xml" />
+    <Content Include="XML\DEAL_STATE_Layout.xml" />
+    <Content Include="XML\DEAL_STATE_SrchLayout.xml" />
+    <Content Include="XML\DEAL_TYPEs_Form.xml" />
+    <Content Include="XML\DEAL_TYPE_Grid.xml" />
+    <Content Include="XML\DEAL_TYPE_Layout.xml" />
+    <Content Include="XML\DEAL_TYPE_SrchLayout.xml" />
+    <Content Include="XML\MainFrame_Form.xml" />
+    <Content Include="XML\PERSONs_Form.xml" />
+    <Content Include="XML\PERSON_Form.xml" />
+    <Content Include="XML\PERSON_Grid.xml" />
+    <Content Include="XML\PERSON_Layout.xml" />
+    <Content Include="XML\PERSON_SrchLayout.xml" />
+    <Content Include="XML\REGIONs_Form.xml" />
+    <Content Include="XML\REGION_Grid.xml" />
+    <Content Include="XML\REGION_Layout.xml" />
+    <Content Include="XML\REGION_SrchLayout.xml" />
+    <Content Include="XML\TOWNs_Form.xml" />
+    <Content Include="XML\TOWN_Grid.xml" />
+    <Content Include="XML\TOWN_Layout.xml" />
+    <Content Include="XML\TOWN_SrchLayout.xml" />
+    <Content Include="XML\V_ALL_CLIENTs_Form.xml" />
+    <Content Include="XML\V_ALL_CLIENT_Form.xml" />
+    <Content Include="XML\V_ALL_CLIENT_Grid.xml" />
+    <Content Include="XML\V_ALL_CLIENT_Layout.xml" />
+    <Content Include="XML\V_ALL_CLIENT_SrchLayout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAvail.Attributes\DataAvail.Attributes.csproj">
+      <Project>{9DDBE27A-BFE9-4600-8585-9DD87880D973}</Project>
+      <Name>DataAvail.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAvail.Data\DataAvail.Data.csproj">
+      <Project>{B82F199A-B1DC-4496-B217-65259FF38BAC}</Project>
+      <Name>DataAvail.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAvail.Utils\DataAvail.Utils.csproj">
+      <Project>{9E3269AC-9BD4-40C3-B768-D415E19F65F9}</Project>
+      <Name>DataAvail.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAvail.XObject\DataAvail.XObject.csproj">
+      <Project>{DD5B7913-B6E9-4F5C-8416-79CAE4DAB510}</Project>
+      <Name>DataAvail.XObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAvail.XtraBinding\DataAvail.XtraBinding.csproj">
+      <Project>{C560D674-F54D-47D4-AFA1-5B59423C8FFA}</Project>
+      <Name>DataAvail.XtraBinding</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

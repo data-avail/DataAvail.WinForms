@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="PERSON">
+    <Width>589</Width>
+    <Height>347</Height>
+    <WindowState>0</WindowState>
+    <LocationX>150</LocationX>
+    <LocationY>150</LocationY>
+  </Form>
+</Root>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CVL">
+    <Width>599</Width>
+    <Height>256</Height>
+    <WindowState>0</WindowState>
+    <LocationX>125</LocationX>
+    <LocationY>125</LocationY>
+  </Form>
+</Root>

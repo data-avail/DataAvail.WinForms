@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataView>
+  <Table name="CLIENT" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="PERSON" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="FIRST_NAME" caption="#" />
+      <Field name="LAST_NAME" caption="#" />
+      <Field name="MIDDLE_NAME" caption="#" />
+      <Field name="PREFIX" caption="#" />
+      <Field name="SEX" caption="#" />
+      <Field name="BIRTH_DATE" caption="#" />
+      <Field name="STATE" caption="#" />
+      <Field name="TYPE" caption="#" />
+      <Field name="REGION" caption="#" />
+      <Field name="INS_DATE" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="CONTACT" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="PERSON" caption="#" />
+      <Field name="TAG" caption="#" />
+      <Field name="TYPE" caption="#" />
+      <Field name="AUX" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="DEAL_STATE" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="REGION" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="CURRENCY" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+      <Field name="MNEM" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="ADDRESS" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="PERSON" caption="#" />
+      <Field name="COUNTRY" caption="#" />
+      <Field name="CITY" caption="#" />
+      <Field name="CITY_TYPE" caption="#" />
+      <Field name="STREET" caption="#" />
+      <Field name="STREET_TYPE" caption="#" />
+      <Field name="HOME" caption="#" />
+      <Field name="ROOM" caption="#" />
+      <Field name="REGION" caption="#" />
+      <Field name="SUBREGION" caption="#" />
+      <Field name="DEPENDED_LOCALITY" caption="#" />
+      <Field name="POSTAL_CODE" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="CVL" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="TABLE_NAME" caption="#" />
+      <Field name="COLUMN_NAME" caption="#" />
+      <Field name="CONST_VAL" caption="#" />
+      <Field name="CONST_NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="DEAL" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="CLIENT" caption="#" />
+      <Field name="DESCRIPTION" caption="#" />
+      <Field name="DATE" caption="#" />
+      <Field name="AGENT" caption="#" />
+      <Field name="MANAGER" caption="#" />
+      <Field name="TYPE" caption="#" />
+      <Field name="STATE" caption="#" />
+      <Field name="PRICEFROMAGENT" caption="#" />
+      <Field name="PRICEFORCLIENT" caption="#" />
+      <Field name="PROFIT" caption="#" />
+      <Field name="AGENTCURRENCY" caption="#" />
+      <Field name="CLIENTCURRENCY" caption="#" />
+      <Field name="RATE" caption="#" />
+      <Field name="VISA_DURATION" caption="#" />
+      <Field name="VISA_COUNTRY" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="PERSIST_FIELDS_STATE" caption="#" itemCaption="#">
+    <Fields />
+  </Table>
+  <Table name="COUNTRY" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="DEAL_TYPE" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="NAME" caption="#" />
+      <Field name="DAYS" caption="#" />
+      <Field name="TYPE" caption="#" />
+    </Fields>
+  </Table>
+</DataView>

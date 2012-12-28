@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CLIENTROLE">
+    <Width>531</Width>
+    <Height>280</Height>
+    <WindowState>0</WindowState>
+    <LocationX>132</LocationX>
+    <LocationY>174</LocationY>
+  </Form>
+</Root>

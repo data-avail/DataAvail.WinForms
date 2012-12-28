@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD5B7913-B6E9-4F5C-8416-79CAE4DAB510}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAvail.XObject</RootNamespace>
+    <AssemblyName>DataAvail.XObject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IXmlReaderLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XContexts\XChildContext.cs" />
+    <Compile Include="XContexts\XContext.cs" />
+    <Compile Include="XContexts\XDefaultContext.cs" />
+    <Compile Include="XContexts\XFkAddItemContext.cs" />
+    <Compile Include="XContexts\XFkSelectItemContext.cs" />
+    <Compile Include="XOFieldCalculator.cs" />
+    <Compile Include="XOFieldCalculatorRouteRelation.cs" />
+    <Compile Include="XOFieldContext.cs" />
+    <Compile Include="XOApplication.cs" />
+    <Compile Include="XOField.cs" />
+    <Compile Include="XOKey.cs" />
+    <Compile Include="XOMenuItem.cs" />
+    <Compile Include="XOMode.cs" />
+    <Compile Include="XOP\XOPDataSet.cs" />
+    <Compile Include="XOP\XOPField.cs" />
+    <Compile Include="XOP\XOPFields.cs" />
+    <Compile Include="XOP\XOPFieldType.cs" />
+    <Compile Include="XOP\XOPFunction.cs" />
+    <Compile Include="XOP\XOPFunctionParam.cs" />
+    <Compile Include="XOP\XOPFunctions.cs" />
+    <Compile Include="XOP\XOPRelation.cs" />
+    <Compile Include="XOP\XOPRelations.cs" />
+    <Compile Include="XOP\XOPTable.cs" />
+    <Compile Include="XOFunction.cs" />
+    <Compile Include="XOFunctionParam.cs" />
+    <Compile Include="XORelation.cs" />
+    <Compile Include="XOTable.cs" />
+    <Compile Include="XSP\XSPApplication.cs" />
+    <Compile Include="XSP\XSPField.cs" />
+    <Compile Include="XSP\XSPTable.cs" />
+    <Compile Include="XOTableContext.cs" />
+    <Compile Include="XWP\XWPApplication.cs" />
+    <Compile Include="XWP\XWPAppSkin.cs" />
+    <Compile Include="XWP\XWPAppView.cs" />
+    <Compile Include="XWP\XWPDataView.cs" />
+    <Compile Include="XWP\XWPField.cs" />
+    <Compile Include="XWP\XWPFieldMask.cs" />
+    <Compile Include="XWP\XWPFields.cs" />
+    <Compile Include="XWP\XWPKey.cs" />
+    <Compile Include="XWP\XWPKeyCommand.cs" />
+    <Compile Include="XWP\XWPKeyCommandContext.cs" />
+    <Compile Include="XWP\XWPKeyCommands.cs" />
+    <Compile Include="XWP\XWPMenuItem.cs" />
+    <Compile Include="XWP\XWPMenuItems.cs" />
+    <Compile Include="XWP\XWPMisc.cs" />
+    <Compile Include="XWP\XWPRelation.cs" />
+    <Compile Include="XWP\XWPRelations.cs" />
+    <Compile Include="XWP\XWPTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAvail.Utils\DataAvail.Utils.csproj">
+      <Project>{17F72A53-68B4-453B-BA82-2C9B1FE45784}</Project>
+      <Name>DataAvail.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

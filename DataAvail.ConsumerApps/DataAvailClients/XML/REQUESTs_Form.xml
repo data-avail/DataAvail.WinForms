@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="REQUESTs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>54</SplitterPosition>
+    <SrchLayout name="REQUEST">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SOURCE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="JIRA_ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+      <Edit name="LINK">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="REQUEST">
+      <Form name="REQUEST">
+        <Width>513</Width>
+        <Height>411</Height>
+        <WindowState>0</WindowState>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSet adapterType="SqlServer" connectionString="Data Source=BAIO-PC\BAIO;Initial Catalog=DataAvailClients;Integrated Security=True;Persist Security Info=True" schemeName="dbo" useStdCommands="true">
+  <Table name="CLIENT" source ="V_CLIENT" sourceUpdate="CLIENT" >
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="FIRST_NAME" type="string,50" />
+      <Field name="LAST_NAME" type="string,50" nullable="true" />
+      <Field name="MIDDLE_NAME" type="string,50" nullable="true" />
+      <Field name="PREFIX" type="int" nullable="true" />
+      <Field name="SEX" type="int" />
+      <Field name="BIRTH_DATE" type="date" nullable="true" />
+      <Field name="STATE" type="int" />
+      <Field name="TYPE" type="int" />
+      <Field name="AUX" type="string,250" nullable="true" />
+      <Field name = "NAME" type="string,100" isMapped="false"/>
+      <Field name="INS_DATE" type="date" isMapped="false"/>
+    </Fields>
+  </Table>
+  <Table name="PROJECT">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="CLIENT" type="int" />
+      <Field name="JIRA_ID" type="string,50" />
+    </Fields>
+  </Table>
+  <Table name="SOURCE">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="NAME" type="string,50" />
+    </Fields>
+  </Table>
+  <Table name="REQUEST" autoFill="false" persistFill="false">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="CLIENT" type="int" nullable="true" />
+      <Field name="TYPE" type="int" />
+      <Field name="SOURCE" type="int" />
+      <Field name="JIRA_ID" type="string,50" nullable="true" />
+      <Field name="DATE" type="date" isMapped="false"/>
+      <Field name="LINK" type="string,500" />
+      <Field name="AUX" type="string,250" nullable="true" />
+    </Fields>
+  </Table>
+  <Table name="CONTACT" autoFill="false" persistFill="false">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="CLIENT" type="int" />
+      <Field name="TAG" type="string,50" nullable="true" />
+      <Field name="TYPE" type="int" nullable="true" />
+      <Field name="AUX" type="string,50" nullable="true" />
+    </Fields>
+  </Table>
+  <Table name="LOGIN" autoFill="true">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="CLIENT" type="int" />
+      <Field name="SOURCE" type="int" defaultValue="0" />
+      <Field name="LABEL" type="string,50" />
+    </Fields>
+  </Table>
+  <Table name="CVL" autoFill="true">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="TABLE_NAME" type="string,50" />
+      <Field name="COLUMN_NAME" type="string,50" />
+      <Field name="CONST_VAL" type="int" />
+      <Field name="CONST_NAME" type="string,50" />
+    </Fields>
+  </Table>
+  <Relations>
+    <!-- CLIENT -->
+    <Relation name="CONTACT_CLIENT" parentTable = "CLIENT" parentField = "ID" childTable = "CONTACT" childField = "CLIENT"/>
+    <Relation name="REQUEST_CLIENT" parentTable = "CLIENT" parentField = "ID" childTable = "REQUEST" childField = "CLIENT"/>
+    <Relation name="PROJECT_CLIENT" parentTable = "CLIENT" parentField = "ID" childTable = "PROJECT" childField = "CLIENT"/>
+    <Relation name="LOGIN_CLIENT" parentTable = "CLIENT" parentField = "ID" childTable = "LOGIN" childField = "CLIENT"/>
+    <Relation name="CLIENT_SEX" parentTable = "CVL" parentField = "CONST_VAL" childTable = "CLIENT" childField = "SEX" filter = "TABLE_NAME = 'CLIENT' AND COLUMN_NAME = 'SEX'"/>
+    <Relation name="CLIENT_PREFIX" parentTable = "CVL" parentField = "CONST_VAL" childTable = "CLIENT" childField = "PREFIX" filter = "TABLE_NAME = 'CLIENT' AND COLUMN_NAME = 'PREFIX'"/>
+    <Relation name="CLIENT_TYPE" parentTable = "CVL" parentField = "CONST_VAL" childTable = "CLIENT" childField = "TYPE" filter = "TABLE_NAME = 'CLIENT' AND COLUMN_NAME = 'TYPE'"/>
+    <Relation name="CLIENT_STATE" parentTable = "CVL" parentField = "CONST_VAL" childTable = "CLIENT" childField = "STATE" filter = "TABLE_NAME = 'CLIENT' AND COLUMN_NAME = 'STATE'"/>
+    <Relation name="REQUEST_STATE" parentTable = "CVL" parentField = "CONST_VAL" childTable = "REQUEST" childField = "TYPE" filter = "TABLE_NAME = 'REQUEST' AND COLUMN_NAME = 'TYPE'"/>
+    <!---->
+    <Relation name="LOGIN_SOURCE" parentTable = "SOURCE" parentField = "ID" childTable = "LOGIN" childField = "SOURCE"/>
+    <Relation name="REQUEST_SOURCE" parentTable = "SOURCE" parentField = "ID" childTable = "REQUEST" childField = "SOURCE"/>
+  </Relations>
+</DataSet>

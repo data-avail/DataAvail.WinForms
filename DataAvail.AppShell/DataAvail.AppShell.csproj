@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6ED2C4E-E44C-45A9-8493-DAED9D1AFEA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAvail.AppShell</RootNamespace>
+    <AssemblyName>DataAvail.AppShell</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.591.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.SQLite, Version=3.80.350.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfigHandler.cs" />
+    <Compile Include="AppSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppSelectForm.Designer.cs">
+      <DependentUpon>AppSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppShellInitializer.cs" />
+    <Compile Include="AppShellInitializerException.cs" />
+    <Compile Include="AppShellLog.cs" />
+    <Compile Include="ConnectionStringMacros.cs" />
+    <Compile Include="ControllerUICreator.cs" />
+    <Compile Include="DataAdapter.cs" />
+    <Compile Include="DataAdapter.FunctionParamMappingRules.cs" />
+    <Compile Include="DebugLog.cs" />
+    <Compile Include="DXBarButtonCommandItem.cs" />
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppSelectForm.resx">
+      <DependentUpon>AppSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="XtraBindingControllerProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAvail.Attributes\DataAvail.Attributes.csproj">
+      <Project>{9DDBE27A-BFE9-4600-8585-9DD87880D973}</Project>
+      <Name>DataAvail.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Controller\DataAvail.Controller.csproj">
+      <Project>{CFBB969A-5DF4-4A46-B324-7D06307C781C}</Project>
+      <Name>DataAvail.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.DataSetBuilder\DataAvail.DataSetParser.csproj">
+      <Project>{6CC961B5-C569-40F3-8257-A622560EAC2F}</Project>
+      <Name>DataAvail.DataSetParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Data\DataAvail.Data.csproj">
+      <Project>{B82F199A-B1DC-4496-B217-65259FF38BAC}</Project>
+      <Name>DataAvail.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.DevArt\Baio.DevArt.Data\DataAvail.DevArt.Data.csproj">
+      <Project>{6894D5F8-207E-473A-BD15-E5C8298AB220}</Project>
+      <Name>DataAvail.DevArt.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.LINQ\DataAvail.LINQ.csproj">
+      <Project>{BB50B74A-9696-4E8A-B732-1CABCA768D80}</Project>
+      <Name>DataAvail.LINQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Serialization\DataAvail.Serialization.csproj">
+      <Project>{BB7F9E7C-3DC7-4EA8-AB02-9232B82F7121}</Project>
+      <Name>DataAvail.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Utils\DataAvail.Utils.csproj">
+      <Project>{9E3269AC-9BD4-40C3-B768-D415E19F65F9}</Project>
+      <Name>DataAvail.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.WinUtils\DataAvail.WinUtils.csproj">
+      <Project>{C860199A-94BF-403B-A4DC-5EE28EE7194C}</Project>
+      <Name>DataAvail.WinUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XObject\DataAvail.XObject.csproj">
+      <Project>{DD5B7913-B6E9-4F5C-8416-79CAE4DAB510}</Project>
+      <Name>DataAvail.XObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraBinding\DataAvail.XtraBinding.csproj">
+      <Project>{C560D674-F54D-47D4-AFA1-5B59423C8FFA}</Project>
+      <Name>DataAvail.XtraBinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraFormController\DataAvail.XtraFormController.csproj">
+      <Project>{E086A62A-3D6D-4975-8064-1E6AF3020ADE}</Project>
+      <Name>DataAvail.XtraFormController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraForm\DataAvail.XtraForm.csproj">
+      <Project>{C7AB8B5B-9110-4E1C-A980-81CE1E65E33B}</Project>
+      <Name>DataAvail.XtraForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraListForm\DataAvail.XtraListForm.csproj">
+      <Project>{757CF7D9-D57E-4DCC-A682-D39C67B99F3D}</Project>
+      <Name>DataAvail.XtraListForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraReportForm\DataAvail.XtraReportForm.csproj">
+      <Project>{3DD4D10F-C2B5-4012-A676-5AF0B83715FF}</Project>
+      <Name>DataAvail.XtraReportForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DX\DataAvail.DX.XtraListForm\DataAvail.DX.XtraListForm.csproj">
+      <Project>{BF7A4BC7-6C6E-4B40-B85E-AAEEB4686E19}</Project>
+      <Name>DataAvail.DX.XtraListForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DX\DataAvail.DX.XtraReportForm\DataAvail.DX.XtraReportForm.csproj">
+      <Project>{07065F54-5236-4C24-B68A-275B6510191E}</Project>
+      <Name>DataAvail.DX.XtraReportForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

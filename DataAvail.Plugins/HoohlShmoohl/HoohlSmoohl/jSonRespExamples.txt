@@ -1,0 +1,371 @@
+﻿//Россия, Москва, Тверской бульвар
+{
+  "name": "россия, москва, тверской бульвар",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Tverskoy bul'var, Moscow, Russia",
+    "AddressDetails": {
+   "Accuracy" : 6,
+   "Country" : {
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU",
+      "Locality" : {
+         "LocalityName" : "город Москва",
+         "Thoroughfare" : {
+            "ThoroughfareName" : "Тверской бул."
+         }
+      }
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.7647425,
+        "south": 55.7575450,
+        "east": 37.6058631,
+        "west": 37.5979725
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.6024436, 55.7613781, 0 ]
+    }
+  } ]
+}
+
+//Россия, Москва, Челябинская улица
+{
+  "name": "россия, москва, челябинская улица",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Chelyabinskaya ulitsa, Moscow, Russia, 105568",
+    "AddressDetails": {
+   "Accuracy" : 6,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Москва",
+         "SubAdministrativeArea" : {
+            "Locality" : {
+               "DependentLocality" : {
+                  "DependentLocalityName" : "Ивановское",
+                  "Thoroughfare" : {
+                     "ThoroughfareName" : "Челябинская ул."
+                  }
+               },
+               "LocalityName" : "город Москва"
+            },
+            "SubAdministrativeAreaName" : "АО Восточный"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.7808200,
+        "south": 55.7745248,
+        "east": 37.8384475,
+        "west": 37.8195415
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.8299025, 55.7777899, 0 ]
+    }
+  } ]
+}
+
+//Россия, Москва, Симоновская набережная
+{
+  "name": "россия, москва, симоновская набережная",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Simonovskaya naberezhnaya, Moscow, Russia",
+    "AddressDetails": {
+   "Accuracy" : 6,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Москва",
+         "SubAdministrativeArea" : {
+            "Locality" : {
+               "DependentLocality" : {
+                  "DependentLocalityName" : "Даниловский",
+                  "Thoroughfare" : {
+                     "ThoroughfareName" : "Симоновская наб."
+                  }
+               },
+               "LocalityName" : "город Москва"
+            },
+            "SubAdministrativeAreaName" : "АО Южный"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.7228564,
+        "south": 55.7163164,
+        "east": 37.6609400,
+        "west": 37.6513247
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.6580251, 55.7197201, 0 ]
+    }
+  } ]
+}
+
+//Россия, Москва, Константина Симонова
+{
+  "name": "россия, москва, константина симонова",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "ulitsa Konstantina Simonova, Moscow, Russia, 125167",
+    "AddressDetails": {
+   "Accuracy" : 6,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Moskva",
+         "SubAdministrativeArea" : {
+            "Locality" : {
+               "DependentLocality" : {
+                  "DependentLocalityName" : "Aeroport",
+                  "Thoroughfare" : {
+                     "ThoroughfareName" : "ulitsa Konstantina Simonova"
+                  }
+               },
+               "LocalityName" : "gorod Moskva"
+            },
+            "SubAdministrativeAreaName" : "administrativnyy okrug Severnyy"
+         }
+      },
+      "CountryName" : "Rossiya",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.8017960,
+        "south": 55.7955007,
+        "east": 37.5449185,
+        "west": 37.5386233
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.5411201, 55.7983275, 0 ]
+    }
+  } ]
+}
+
+//Россия, Челябинская область, Челябинск, Ленинградская улица
+{
+  "name": "россия, челябинская область, челябинск, ленинградская улица",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Leningradskaya ulitsa, Chelyabinsk, Province of Chelyabinsk, Russia, 454048",
+    "AddressDetails": {
+   "Accuracy" : 6,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Челябинская область",
+         "SubAdministrativeArea" : {
+            "Locality" : {
+               "LocalityName" : "город Челябинск",
+               "Thoroughfare" : {
+                  "ThoroughfareName" : "Ленинградская ул."
+               }
+            },
+            "SubAdministrativeAreaName" : "городской округ город Челябинск"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.1421315,
+        "south": 55.1358362,
+        "east": 61.3897897,
+        "west": 61.3834945
+      }
+    },
+    "Point": {
+      "coordinates": [ 61.3869942, 55.1391810, 0 ]
+    }
+  } ]
+}
+
+
+//Россия, Ленинский район, Москва
+{
+  "name": "россия, ленинский район, москва",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Leninskiy rayon, Province of Moscow, Russia",
+    "AddressDetails": {
+   "Accuracy" : 3,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Московская область",
+         "SubAdministrativeArea" : {
+            "SubAdministrativeAreaName" : "Ленинский район"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.6848453,
+        "south": 55.4830386,
+        "east": 37.6615388,
+        "west": 37.1493012
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.4054200, 55.5840716, 0 ]
+    }
+  } ]
+}
+
+//Россия, Москва
+
+{
+  "name": "россия, москва",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Moscow, Russia",
+    "AddressDetails": {
+   "Accuracy" : 4,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "город Москва",
+         "Locality" : {
+            "LocalityName" : "город Москва"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 55.9561918,
+        "south": 55.5543451,
+        "east": 38.1298706,
+        "west": 37.1053954
+      }
+    },
+    "Point": {
+      "coordinates": [ 37.6176330, 55.7557860, 0 ]
+    }
+  } ]
+}
+
+
+//Россия, Челябинская область, Юрюзань
+{
+  "name": "россия, челябинская область, юрюзань",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "Yuryuzan, Province of Chelyabinsk, Russia",
+    "AddressDetails": {
+   "Accuracy" : 4,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Челябинская область",
+         "Locality" : {
+            "LocalityName" : "город Юрюзань"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 54.9299230,
+        "south": 54.8272140,
+        "east": 58.5588190,
+        "west": 58.3027002
+      }
+    },
+    "Point": {
+      "coordinates": [ 58.4307596, 54.8786012, 0 ]
+    }
+  } ]
+}
+
+//Россия, Челябинская область, Первуха
+{
+  "name": "россия, челябинская область, первуха",
+  "Status": {
+    "code": 200,
+    "request": "geocode"
+  },
+  "Placemark": [ {
+    "id": "p1",
+    "address": "derevnya Pervukha, Province of Chelyabinsk, Russia",
+    "AddressDetails": {
+   "Accuracy" : 4,
+   "Country" : {
+      "AdministrativeArea" : {
+         "AdministrativeAreaName" : "Челябинская область",
+         "SubAdministrativeArea" : {
+            "Locality" : {
+               "LocalityName" : "деревня Первуха"
+            },
+            "SubAdministrativeAreaName" : "Катав-Ивановский район"
+         }
+      },
+      "CountryName" : "Россия",
+      "CountryNameCode" : "RU"
+   }
+},
+    "ExtendedData": {
+      "LatLonBox": {
+        "north": 54.8603431,
+        "south": 54.8153771,
+        "east": 58.6495598,
+        "west": 58.5714792
+      }
+    },
+    "Point": {
+      "coordinates": [ 58.6105195, 54.8378601, 0 ]
+    }
+  } ]
+}

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet adapterType="SqlServer" connectionString="Data Source=BAIO-PC\BAIO;Initial Catalog=company;Integrated Security=True;Persist Security Info=True" schemeName="dbo" useStdCommands="true" defaultTablePrefix="" typeConverter="">
+  <!--defaultTablePrefix="dbo_">-->
+  <Table name="DEAL" caption ="Сделки" itemCaption="Сделка" persistFill="false" source ="V_DEAL" sourceUpdate="DEAL" stdCommandsType="select|update">
+    <Functions>
+      <Function type="insert | update" name="save_deal" >
+        <Param direction="ReturnValue" type="int"/>
+      </Function>
+      <Function type="delete" name="delete_deal">
+        <Param name="id" mappedField="ID"/>
+      </Function>
+    </Functions>
+    <Fields parentDisplayField="NAME" >
+      <Field name = "ID" caption ="№ сделки" mask="n0" type="int" pk="true"/>
+      <Field name = "CLIENT" caption ="Клиент" type="int" itemSelector="add|edit" commands="addKey|selectKey|selectKeySearch" controlType="AutoRefCombo"/>
+      <Field name = "CLIENT_NAME" caption ="Клиент" type="string, 250" isMapped="false"/>
+      <Field name = "MANAGER" caption ="Мэнеджер" type="int" controlType="AutoRefCombo"/>
+      <Field name = "MANAGER_NAME" caption ="Мэнеджер" type="string, 250" isMapped="false"/>
+      <Field name = "AGENT" caption ="Агент" type="int" itemSelector="add|edit" commands="addKey|selectKey|selectKeySearch" controlType="AutoRefCombo"/>
+      <Field name = "AGENT_NAME" caption ="Агент" type="string, 250" isMapped="false"/>
+      <Field name = "TYPE" caption ="Тип сделки" type="int" defaultValue="0" />
+      <Field name = "STATE" caption ="Статус" type="int" defaultValue="0"/>
+      <Field name = "DATE" caption ="Дата сделки" type="date" isMapped="false" mask="d:f"/>
+      <Field name = "DESCRIPTION" caption ="Описание (доп. инфо)" type="string, 50" controlType="TextBoxMultiLine"/>
+      <Field name = "PRICEFROMAGENT" caption ="Цена у агента" type="double" mask="n0"/>
+      <Field name = "PRICEFORCLIENT" caption ="Цена клиента" type="double" mask="n0"/>
+      <Field name = "PROFIT" caption ="Прибыль" type="double" mask="n0"/>
+      <Field name = "AGENTCURRENCY" caption ="Валюта оплаты агенту" type="int" parentDisplayField="MNEM" defaultValue="0" />
+      <Field name = "CLIENTCURRENCY" caption ="Валюта оплаты клиента" type="int" isMapped="false" parentDisplayField="MNEM" defaultValue="0"/>
+      <Field name = "RATE" caption ="Курс агента (рубль к валюте)" type="double" mask="n2"/>
+      <Field name = "CLIENT_BIRTH_DATE" caption ="Дата рождения клиента" calculator="CLIENT;BIRTH_DATE" type="date"/>
+      <Field name = "CLIENT_MOBILE" caption ="Телефон клиента" calculator="CLIENT;CONTACT-PERSON-TAG[TYPE=0]" type="string,50"/>
+      <Field name = "CLIENT_EMAIL" caption ="Почта клиента" calculator="CLIENT;CONTACT-PERSON-TAG[TYPE=3]" type="string,50"/>
+      <Field name = "AGENT_MOBILE" caption ="Телефон агента" calculator="AGENT;CONTACT-PERSON-TAG[TYPE=0]" type="string,50"/>
+      <Field name = "AGENT_EMAIL" caption ="Почта агента" calculator="AGENT;CONTACT-PERSON-TAG[TYPE=3]" type="string,50"/>
+      <Field name = "VISA_DURATION" caption ="Длительность визы" type="int" parentDisplayField="CONST_NAME" itemSelector="add|edit" itemAdd="button"/>
+      <Field name = "VISA_COUNTRY" caption ="Страна визы" type="int" itemSelector="add|edit" itemAdd="button"/>
+      <Field name = "CLIENT_REGION" caption ="Регион клиента" type="string,50" calculator="CLIENT;REGION,REGION;NAME"/>
+    </Fields>
+  </Table>
+</DataSet>

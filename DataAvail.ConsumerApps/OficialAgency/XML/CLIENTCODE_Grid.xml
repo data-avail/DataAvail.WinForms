@@ -1,0 +1,63 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="10">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">69</property>
+      <property name="Name">colCLASSIFIED</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">164</property>
+      <property name="Name">colCLIENT</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colCODETYPE</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colCODE</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colDESCRIPTION</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Width">57</property>
+      <property name="Name">colMARKETPLACE</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colLABEL</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colVALIDFROM</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">57</property>
+      <property name="Name">colVALIDTO</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Width">65</property>
+      <property name="Name">colDEPARTMENT</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

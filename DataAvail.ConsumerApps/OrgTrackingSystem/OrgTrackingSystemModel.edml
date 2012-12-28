@@ -1,0 +1,327 @@
+﻿<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0">
+        <EntityContainer Name="DataEntitiesStoreContainer">
+          <EntitySet Name="Persons" EntityType="DataModel.Store.Persons" store:Type="Tables" Table="Persons" />
+          <EntitySet Name="Requests" EntityType="DataModel.Store.Requests" store:Type="Tables" Table="Requests" />
+          <EntitySet Name="Contacts" EntityType="DataModel.Store.Contacts" store:Type="Tables" Table="Contacts" />
+          <EntitySet Name="Address" EntityType="DataModel.Store.Address" store:Type="Tables" Table="Address" />
+          <AssociationSet Name="FK_Address_Persons" Association="DataModel.Store.FK_Address_Persons">
+            <End Role="Persons" EntitySet="Persons" />
+            <End Role="Address" EntitySet="Address" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_Persons" Association="DataModel.Store.FK_Contacts_Persons">
+            <End Role="Persons" EntitySet="Persons" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Requests_Persons" Association="DataModel.Store.FK_Requests_Persons">
+            <End Role="Persons" EntitySet="Persons" />
+            <End Role="Requests" EntitySet="Requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Requests_Persons1" Association="DataModel.Store.FK_Requests_Persons1">
+            <End Role="Persons" EntitySet="Persons" />
+            <End Role="Requests" EntitySet="Requests" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Persons">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="FirstName" Type="int" />
+          <Property Name="LastName" Type="int" />
+          <Property Name="CreateDate" Type="int" />
+          <Property Name="MiddleName" Type="int" />
+          <Property Name="TypeId" Type="int" />
+        </EntityType>
+        <EntityType Name="Requests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Caption" Type="varchar" />
+          <Property Name="Descr" Type="int" />
+          <Property Name="CreateDate" Type="int" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="SourceId" Type="int" />
+          <Property Name="SourceHref" Type="int" />
+          <Property Name="StatusId" Type="int" />
+          <Property Name="ResloveDate" Type="int" />
+          <Property Name="JiiraId" Type="varchar" />
+          <Property Name="ClientId" Type="int" />
+          <Property Name="ManagerId" Type="int" />
+          <Property Name="TypeId" Type="int" />
+        </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Tag" Type="int" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="PersonId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="PersonId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Address_Persons">
+          <End Role="Persons" Type="DataModel.Store.Persons" Multiplicity="0..1" />
+          <End Role="Address" Type="DataModel.Store.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persons">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_Persons">
+          <End Role="Persons" Type="DataModel.Store.Persons" Multiplicity="1" />
+          <End Role="Contacts" Type="DataModel.Store.Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persons">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Requests_Persons">
+          <End Role="Persons" Type="DataModel.Store.Persons" Multiplicity="0..1" />
+          <End Role="Requests" Type="DataModel.Store.Requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persons">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Requests">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Requests_Persons1">
+          <End Role="Persons" Type="DataModel.Store.Persons" Multiplicity="0..1" />
+          <End Role="Requests" Type="DataModel.Store.Requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persons">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Requests">
+              <PropertyRef Name="ManagerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataModel" Alias="Self" devart:FilePerClass="false" devart:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0">
+        <EntityContainer Name="DataEntities" annotation:LazyLoadingEnabled="true" devart:Guid="e3b53d7d-82db-438b-896c-523f5ea2de94">
+          <EntitySet Name="Persons" EntityType="DataModel.Person" />
+          <EntitySet Name="Requests" EntityType="DataModel.Request" />
+          <EntitySet Name="Contacts" EntityType="DataModel.Contact" />
+          <EntitySet Name="Address" EntityType="DataModel.Address" />
+          <AssociationSet Name="Person_AddressSet" Association="DataModel.Person_Address">
+            <End Role="Person" EntitySet="Persons" />
+            <End Role="Address" EntitySet="Address" />
+          </AssociationSet>
+          <AssociationSet Name="Person_ContactSet" Association="DataModel.Person_Contact">
+            <End Role="Person" EntitySet="Persons" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="Person_RequestSet" Association="DataModel.Person_Request">
+            <End Role="Person" EntitySet="Persons" />
+            <End Role="Requests" EntitySet="Requests" />
+          </AssociationSet>
+          <AssociationSet Name="Person_Request1Set" Association="DataModel.Person_Request1">
+            <End Role="Person1" EntitySet="Persons" />
+            <End Role="Requests1" EntitySet="Requests" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Person" devart:Guid="95d5c5bc-6be2-408c-b27c-989245a27ab1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" devart:Guid="b20c1d54-7b31-48ba-bcd3-8250d5b774f9" />
+          <Property Name="FirstName" Type="Int32" devart:Guid="b764ebde-8c3f-4580-b5be-10e1057c6f15" />
+          <Property Name="MiddleName" Type="Int32" devart:Guid="3da24fe3-919a-46d1-a73c-0a119b5b8dea" />
+          <Property Name="LastName" Type="Int32" devart:Guid="0676bd02-2de5-4c9f-8406-0c17993b7910" />
+          <Property Name="CreateDate" Type="Int32" devart:Guid="e31fa8df-b2d8-4bd4-9f3b-b98bb8921236" />
+          <Property Name="TypeId" Type="Int32" devart:Guid="419f01bd-f4ba-4801-aad9-3b29fb8f1371" />
+          <NavigationProperty Name="Address" Relationship="DataModel.Person_Address" FromRole="Person" ToRole="Address" devart:Guid="52736663-15fa-4ce1-8fac-9256a1186f4a" />
+          <NavigationProperty Name="Contacts" Relationship="DataModel.Person_Contact" FromRole="Person" ToRole="Contacts" devart:Guid="12483348-3ca0-4c9a-918c-f934b59fd6bc" />
+          <NavigationProperty Name="Requests" Relationship="DataModel.Person_Request" FromRole="Person" ToRole="Requests" devart:Guid="7e52ef66-9bba-45bb-9a43-a2f309d80f55" />
+          <NavigationProperty Name="Requests1" Relationship="DataModel.Person_Request1" FromRole="Person1" ToRole="Requests1" devart:Guid="7660f581-9b0f-4303-a757-928d0dfa3ea6" />
+        </EntityType>
+        <EntityType Name="Request" devart:Guid="4852844c-a699-49c4-bd17-af36fd64d3cd">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" devart:Guid="09b41f29-4a9f-4b85-a010-2470f167a545" />
+          <Property Name="Caption" Type="String" devart:Guid="7eea97a0-3621-4918-a9d2-b387a96af0ff" />
+          <Property Name="Descr" Type="Int32" devart:Guid="633c1cfb-53e5-4bbf-9a25-55df0ed8d285" />
+          <Property Name="CreateDate" Type="Int32" devart:Guid="3dfdef45-a3f2-47c3-90ee-da76a9edb629" />
+          <Property Name="Priority" Type="Int32" devart:Guid="1ed3369c-0635-4a8f-a528-8d819f46390a" />
+          <Property Name="SourceId" Type="Int32" devart:Guid="5ad18b93-4297-4a1e-b93a-d2d71e3b4aed" />
+          <Property Name="SourceHref" Type="Int32" devart:Guid="8fef78eb-8c20-4a44-bc09-9a036a73f3bb" />
+          <Property Name="StatusId" Type="Int32" devart:Guid="23229eaf-45e2-43d2-ab25-885b2e7edff6" />
+          <Property Name="ResloveDate" Type="Int32" devart:Guid="75f11b9c-4af6-4c92-b2df-b6f58f84fd55" />
+          <Property Name="JiiraId" Type="String" devart:Guid="50e5cd20-8e6d-4f53-884f-504d563d62ed" />
+          <Property Name="ClientId" Type="Int32" devart:Guid="a8b1d4a4-9c69-41e9-a8e3-c9d0443e6286" />
+          <Property Name="ManagerId" Type="Int32" devart:Guid="b4d089d7-65e5-4a28-9ea2-7f7f9e3f0216" />
+          <Property Name="TypeId" Type="Int32" devart:Guid="6ab82d50-bbc8-4271-a852-562b5814a265" />
+          <NavigationProperty Name="Person" Relationship="DataModel.Person_Request" FromRole="Requests" ToRole="Person" devart:Guid="2f3368fa-9214-4439-aac2-53f44b307e98" />
+          <NavigationProperty Name="Person1" Relationship="DataModel.Person_Request1" FromRole="Requests1" ToRole="Person1" devart:Guid="49290218-1e10-441c-ab89-56a6f410da12" />
+        </EntityType>
+        <EntityType Name="Contact" devart:Guid="82fbd93f-5f08-4f0a-9aaf-c4a8645b0c66">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" devart:Guid="81ffcbb2-4758-40b8-8444-f3b4bad96755" />
+          <Property Name="Tag" Type="Int32" devart:Guid="7f059596-f864-45f3-912b-27c36a494b21" />
+          <Property Name="TypeId" Type="Int32" devart:Guid="f41ed79d-7bcb-4fe9-ac3f-204c0b3c85ba" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" devart:Guid="22fdc184-6e38-4503-ba07-4f38574cf879" />
+          <NavigationProperty Name="Person" Relationship="DataModel.Person_Contact" FromRole="Contacts" ToRole="Person" devart:Guid="4fe1c38d-9d20-4fa5-a8f7-4d71890b7d2f" />
+        </EntityType>
+        <EntityType Name="Address" devart:Guid="608bc768-a7a6-4d97-b977-f3f7940ec4c8">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" devart:Guid="f648cd88-b389-456b-9dc6-fb745b82163a" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" devart:Guid="44f9a162-da48-4319-9b2a-d6818057b674" />
+          <NavigationProperty Name="Person" Relationship="DataModel.Person_Address" FromRole="Address" ToRole="Person" devart:Guid="6bf1ded0-633c-48b8-8ae1-191092e59bca" />
+        </EntityType>
+        <Association Name="Person_Address" devart:Guid="4d5d5414-4e8e-450f-b276-742fdfb44c05">
+          <End Role="Person" Type="DataModel.Person" Multiplicity="1" />
+          <End Role="Address" Type="DataModel.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Person_Contact" devart:Guid="4a09fe3b-21f4-4847-84a6-ee9c8413dda0">
+          <End Role="Person" Type="DataModel.Person" Multiplicity="1" />
+          <End Role="Contacts" Type="DataModel.Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Person_Request" devart:Guid="eb304b53-42d0-4cdb-b62f-f6203164fee2">
+          <End Role="Person" Type="DataModel.Person" Multiplicity="0..1" />
+          <End Role="Requests" Type="DataModel.Request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Requests">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Person_Request1" devart:Guid="3bf28cd1-5b59-434f-a962-7c04ec7708fe">
+          <End Role="Person1" Type="DataModel.Person" Multiplicity="0..1" />
+          <End Role="Requests1" Type="DataModel.Request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person1">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Requests1">
+              <PropertyRef Name="ManagerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- MSL content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataEntitiesStoreContainer" CdmEntityContainer="DataEntities">
+          <EntitySetMapping Name="Persons">
+            <EntityTypeMapping TypeName="DataModel.Person">
+              <MappingFragment StoreEntitySet="Persons">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Requests">
+            <EntityTypeMapping TypeName="DataModel.Request">
+              <MappingFragment StoreEntitySet="Requests">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Caption" ColumnName="Caption" />
+                <ScalarProperty Name="Descr" ColumnName="Descr" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="SourceId" ColumnName="SourceId" />
+                <ScalarProperty Name="SourceHref" ColumnName="SourceHref" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="ResloveDate" ColumnName="ResloveDate" />
+                <ScalarProperty Name="JiiraId" ColumnName="JiiraId" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="DataModel.Contact">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tag" ColumnName="Tag" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Address">
+            <EntityTypeMapping TypeName="DataModel.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <edmx:Diagrams>
+      <Diagram Name="Main" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

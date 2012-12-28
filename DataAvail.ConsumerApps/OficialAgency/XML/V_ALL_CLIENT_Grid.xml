@@ -1,0 +1,108 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="21">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">104</property>
+      <property name="Name">colCLASSIFIED</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">86</property>
+      <property name="Name">colSYSTYPE</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">35</property>
+      <property name="Name">colSYSTYPE_LABEL</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">143</property>
+      <property name="Name">colRESIDENT</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Width">35</property>
+      <property name="Name">colRESIDENT_LABEL</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Width">130</property>
+      <property name="Name">colORG</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Width">35</property>
+      <property name="Name">colORG_LABEL</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">110</property>
+      <property name="Name">colBANK</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Width">40</property>
+      <property name="Name">colBANK_LABEL</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Width">77</property>
+      <property name="Name">colISNEW</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Width">40</property>
+      <property name="Name">colISNEW_LABEL</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Width">107</property>
+      <property name="Name">colISSOFFIT</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Width">40</property>
+      <property name="Name">colISSOFFIT_LABEL</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Width">93</property>
+      <property name="Name">colUSERDATE</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Width">72</property>
+      <property name="Name">colUSERINFO</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Width">20</property>
+      <property name="Name">colCLIENTCODE</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Width">20</property>
+      <property name="Name">colISISSUER</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Width">20</property>
+      <property name="Name">colISAGENT</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">207</property>
+      <property name="Name">colDESCRIPTION</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Width">40</property>
+      <property name="Name">colISFIELDCONTRACTOR</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">183</property>
+      <property name="Name">colLABEL</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

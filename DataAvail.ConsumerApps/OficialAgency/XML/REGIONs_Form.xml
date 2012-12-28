@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="REGIONs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="REGION">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="REGION">
+      <Form name="REGION">
+        <Width>513</Width>
+        <Height>210</Height>
+        <WindowState>0</WindowState>
+        <LocationX>331</LocationX>
+        <LocationY>98</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

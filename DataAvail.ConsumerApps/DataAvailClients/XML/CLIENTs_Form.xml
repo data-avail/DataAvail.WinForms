@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CLIENTs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>0</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>31</SplitterPosition>
+    <SrchLayout name="CLIENT">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="FIRST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="LAST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="MIDDLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PREFIX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SEX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BIRTH_DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+      <Edit name="STATE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="INS_DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+    </SrchLayout>
+    <Grid name="CLIENT">
+      <Form name="CLIENT">
+        <Width>596</Width>
+        <Height>468</Height>
+        <WindowState>0</WindowState>
+        <LocationX>299</LocationX>
+        <LocationY>113</LocationY>
+        <Layout name="CLIENT">
+          <Grid name="CONTACT">
+            <Form name="CONTACT">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>0</LocationX>
+              <LocationY>0</LocationY>
+            </Form>
+          </Grid>
+          <Grid name="REQUEST">
+            <Form name="REQUEST">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>591</LocationX>
+              <LocationY>119</LocationY>
+            </Form>
+          </Grid>
+          <Grid name="PROJECT">
+            <Form name="PROJECT">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>0</LocationX>
+              <LocationY>0</LocationY>
+            </Form>
+          </Grid>
+          <Grid name="LOGIN">
+            <Form name="LOGIN">
+              <Width>513</Width>
+              <Height>411</Height>
+              <WindowState>0</WindowState>
+              <LocationX>432</LocationX>
+              <LocationY>141</LocationY>
+            </Form>
+          </Grid>
+        </Layout>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="V_ALL_CLIENT">
+    <Width>855</Width>
+    <Height>569</Height>
+    <WindowState>0</WindowState>
+    <LocationX>66</LocationX>
+    <LocationY>87</LocationY>
+  </Form>
+</Root>

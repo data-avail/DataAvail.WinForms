@@ -1,0 +1,29 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">false</property>
+  <property name="Columns" iskey="true" value="4">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">324</property>
+      <property name="Name">colNAME</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">164</property>
+      <property name="Name">colDAYS</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Name">colTYPE</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="SortInfo">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFHcmlkLnYxMC4xLCBWZXJzaW9uPTEwLjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAADhEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvQ29sbGVjdGlvbgIAAAAKZ3JvdXBDb3VudBNDb2xsZWN0aW9uQmFzZStsaXN0AAMIHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAAAQAAAAkDAAAABAMAAAAcU3lzdGVtLkNvbGxlY3Rpb25zLkFycmF5TGlzdAMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBQAACAgJBAAAAAEAAAAEAAAAEAQAAAAEAAAACQUAAAANAwwGAAAAGURldkV4cHJlc3MuWHRyYUdyaWQudjEwLjEFBQAAAC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAAAlTb3J0T3JkZXIKQ29sdW1uTmFtZQABCAYAAAABAAAABgcAAAAHY29sVFlQRQs=</property>
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

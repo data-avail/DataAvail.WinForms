@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppView name ="Your application name here">
+  <DataView parentDisplayField="CONST_NAME" saveMode="repository" childSaveMode="repsitory|cache">
+    <Relations>
+      <!--<Relation name="ADDRESS_PERSON" showChildren="true" serializationName="ADDRESS_PERSON"/>-->
+    </Relations>
+  </DataView>
+  <AppView>
+    <MenuItems>
+      <MenuItem caption ="Справочники">
+        <MenuItem tableName="CLIENT" caption ="Клиенты" key="ctl,c"/>
+      </MenuItem>
+      <MenuItem caption="Администрирование">
+        <MenuItem tableName="CVL" caption="Kонстанты" />
+      </MenuItem>
+    </MenuItems>
+    <Keys>
+      <Key command="showItem" key="ctl,return"/>
+      <Key command="selectItem" key="return"/>
+      <Key command="addItem" key="ctl,add"/>
+      <Key command="removeItem" key="ctl,subtract"/>
+      <Key command="closeForm" key="ctl,q">
+        <KeyContext context="fkItem" key="escape;ctl,q"/>
+      </Key>
+      <Key command="saveChanges" key="ctl,s"/>
+      <Key command="rejectChanges" key="ctl,r"/>
+      <Key command="movePerv" key="ctl,left"/>
+      <Key command="moveNext" key="ctl,right"/>
+      <Key command="fkAddItem" key="ctl,add"/>
+      <Key command="fkSelectItem" key="ctl,return"/>
+      <Key command="refreshList" key="f5"/>
+      <Key command="uploadToExcel" key="f4"/>
+      <Key command="focusSearch" key="ctl,up"/>
+      <Key command="focusList" key="ctl,down"/>
+      <Key command="endEdit" key="shift,s"/>
+      <Key command="cancelEdit" key="shift,r"/>
+    </Keys>
+    <Misc>
+      <AppSkin name="none"/>
+    </Misc>
+  </AppView>
+</AppView>

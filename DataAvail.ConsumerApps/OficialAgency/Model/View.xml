@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppView name ="Н-Траст">
+  <DataView parentDisplayField="CONST_NAME" saveMode="repository" childSaveMode="repository|cache">
+    <Table name="DEAL" caption="Сделки" itemCaption="Сделка">
+      <Fields parentDisplayField="NAME" >
+        <Field name = "ID" caption ="№ сделки" />
+        <Field name = "CLIENT" caption ="Клиент" fkSelectItemMode="add|edit" fkInterface="addItemKey|selectItemKey|selectItemKeySearch|selectItemButton|addItemButton|selectItemButtonSearch" />
+        <Field name = "CLIENT_NAME" caption ="Клиент" />
+        <Field name = "MANAGER" caption ="Мэнеджер" />
+        <Field name = "MANAGER_NAME" caption ="Мэнеджер" />
+        <Field name = "AGENT" caption ="Агент" fkSelectItemMode="view" fkInterface="addItemKey|selectItemKey|selectItemKeySearch|selectItemButton|addItemButton|selectItemButtonSearch" />
+        <Field name = "AGENT_NAME" caption ="Агент" />
+        <Field name = "TYPE" caption ="Тип сделки" />
+        <Field name = "STATE" caption ="Статус" />
+        <Field name = "DATE" caption ="Дата сделки" mask="d:f"/>
+        <Field name = "DESCRIPTION" caption ="Описание (доп. инфо)" controlType="TextBoxMultiLine"/>
+        <Field name = "PRICEFROMAGENT" caption ="Цена у агента" mask="n0"/>
+        <Field name = "PRICEFORCLIENT" caption ="Цена клиента" mask="n0"/>
+        <Field name = "PROFIT" caption ="Прибыль" mask="n0"/>
+        <Field name = "AGENTCURRENCY" caption ="Валюта оплаты агенту" parentDisplayField="MNEM"/>
+        <Field name = "CLIENTCURRENCY" caption ="Валюта оплаты клиента" parentDisplayField="MNEM" />
+        <Field name = "RATE" caption ="Курс агента (рубль к валюте)" mask="n2"/>
+        <Field name = "CLIENT_BIRTH_DATE" caption ="Дата рождения клиента" />
+        <Field name = "CLIENT_MOBILE" caption ="Телефон клиента" />
+        <Field name = "CLIENT_EMAIL" caption ="Почта клиента" />
+        <Field name = "AGENT_MOBILE" caption ="Телефон агента" />
+        <Field name = "AGENT_EMAIL" caption ="Почта агента" />
+        <Field name = "VISA_DURATION" caption ="Длительность визы" parentDisplayField="CONST_NAME" itemSelector="add|edit" />
+        <Field name = "VISA_COUNTRY" caption ="Страна визы" itemSelector="add|edit" />
+        <Field name = "CLIENT_REGION" caption ="Регион клиента" />
+      </Fields>
+    </Table>
+    <Table name="COUNTRY" caption ="Страны" itemCaption="Страна">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Название" />
+      </Fields>
+    </Table>
+    <Table name="REGION" caption ="Регионы" itemCaption="Регион">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Название" />
+      </Fields>
+    </Table>
+    <Table name="DEAL_STATE" caption ="Статусы сделки" itemCaption="Статус сделки">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Имя" />
+      </Fields>
+    </Table>
+    <Table name="DEAL_TYPE" caption ="Типы сделки" itemCaption="Статус сделки">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Имя" />
+        <Field name = "DAYS" caption ="Кол-во дней исполнения" />
+        <Field name = "TYPE" caption ="Тип" />
+      </Fields>
+    </Table>
+    <Table name="CURRENCY" caption ="Валюты" itemCaption="Валюта">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Имя" />
+        <Field name = "MNEM" caption ="Сокращение" />
+      </Fields>
+    </Table>
+    <Table name="PERSON" caption ="Человеки" itemCaption="Человек">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "FIRST_NAME" caption ="Имя" />
+        <Field name = "LAST_NAME" caption ="Фамилия" />
+        <Field name = "MIDDLE_NAME" caption ="Отчество" />
+        <Field name = "SEX" caption ="Пол" />
+        <Field name = "PREFIX" caption ="Обращение" />
+        <Field name = "BIRTH_DATE" caption ="День рождения" />
+        <Field name = "STATE" caption ="Статус" />
+        <Field name = "TYPE" caption ="Тип" />
+        <Field name = "NAME" caption ="Имя" />
+        <Field name = "REGION" caption ="Регион" parentDisplayField="NAME"/>
+      </Fields>
+    </Table>
+    <Table name="ADDRESS" caption="Аддресса" itemCaption="Аддресс" saveMode="repository">
+      <Fields>
+        <Field name="ID" caption="#" />
+        <Field name="PERSON" caption="Человек" />
+        <Field name="COUNTRY" caption="Страна" controlType="HoohlShmoohlEditor,0" bindingProperty="Country"/>
+        <Field name="CITY" caption="Город" controlType="HoohlShmoohlEditor,0" bindingProperty="City"/>
+        <Field name="CITY_TYPE" caption="Тип города" controlType="HoohlShmoohlEditor,0" bindingProperty="CityType"/>
+        <Field name="STREET" caption="Улица" controlType="HoohlShmoohlEditor,0" bindingProperty="Street"/>
+        <Field name="STREET_TYPE" caption="Тип улицы" controlType="HoohlShmoohlEditor,0" bindingProperty="StreetType"/>
+        <Field name="HOME" caption="Дом" controlType="HoohlShmoohlEditor,0" bindingProperty="Building"/>
+        <Field name="ROOM" caption="Квартира" controlType="HoohlShmoohlEditor,0" bindingProperty="Room"/>
+        <Field name="REGION" caption="Регион" controlType="HoohlShmoohlEditor,0" bindingProperty="AdministrativeArea"/>
+        <Field name="SUBREGION" caption="Область" controlType="HoohlShmoohlEditor,0" bindingProperty="SubAdministrativeArea"/>
+        <Field name="DEPENDED_LOCALITY" caption="Район" controlType="HoohlShmoohlEditor,0" bindingProperty="DependedLocality"/>
+        <Field name="POSTAL_CODE" caption="Индекс" controlType="HoohlShmoohlEditor,0" bindingProperty="PostalCode"/>
+		<Field name="ADDR" caption="Аддресс" controlType="HoohlShmoohlEditor,0" bindingProperty="Address" displayType="list|item"/>
+      </Fields>
+    </Table>
+    <Table name="CONTACT" caption ="Контакты" itemCaption="Контакт">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "PERSON" caption ="Человек" />
+        <Field name = "ADDRESS" caption ="Аддресс" />
+        <Field name = "TAG" caption ="Таг" />
+        <Field name = "TYPE" caption ="Тип" />
+        <Field name = "AUX" caption ="Доп. инфо" controlType="TextBoxMultiLine"/>
+      </Fields>
+    </Table>
+    <Table name="TOWN" caption ="Города" itemCaption="Город">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "NAME" caption ="Имя" />
+      </Fields>
+    </Table>
+    <Table name="CVL" caption ="Контстанты" itemCaption="Константа">
+      <Fields>
+        <Field name = "ID" caption ="#" />
+        <Field name = "TABLE_NAME" caption ="Имя таблицы" />
+        <Field name = "COLUMN_NAME" caption ="Имя столбца" />
+        <Field name = "CONST_VAL" caption ="Значение константы" />
+        <Field name = "CONST_NAME" caption ="Наименовние константы" />
+      </Fields>
+    </Table>
+    <Relations>
+      <!--CONTACT-->
+      <Relation name="CONTACT_TYPE"/>
+      <!--ADDRESS-->
+      <Relation name="ADDRESS_TOWN"/>
+      <!--PERSON-->
+      <Relation name="ADDRESS_PERSON" showChildren="true"/>
+      <Relation name="CONTACT_PERSON" showChildren="true"/>
+      <Relation name="PERSON_SEX"/>
+      <Relation name="PERSON_PREFIX"/>
+      <Relation name="PERSON_TYPE"/>
+      <Relation name="PERSON_STATE"/>
+      <Relation name="PERSON_REGION"/>
+      <!---DEAL-->
+      <Relation name="DEAL_CLIENT" serializationName="DEAL_CLIENT"/>
+      <Relation name="DEAL_AGENT" serializationName="DEAL_CLIENT"/>
+      <Relation name="DEAL_MANAGER" serializationName="DEAL_CLIENT"/>
+      <Relation name="DEAL_STATE"/>
+      <Relation name="DEAL_TYPE"/>
+      <Relation name="DEAL_AGENTCURRENCY"/>
+      <Relation name="DEAL_CLIENTCURRENCY"/>
+      <Relation name="DEAL_VISA_DURATION"/>
+      <Relation name="DEAL_VISA_COUNTRY"/>
+      <!--DEAL_TYPE-->
+      <Relation name="DEAL_TYPE_TYPE"/>
+    </Relations>
+  </DataView>
+  <AppView>
+    <MenuItems>
+      <MenuItem caption ="Справочники">
+        <MenuItem tableName="DEAL" caption ="Сделки" key="ctl,d"/>
+        <MenuItem tableName="PERSON" caption ="Человеки" key="ctl,c"/>
+      </MenuItem>
+      <MenuItem caption="Администрирование">
+        <MenuItem tableName="CVL" caption="Kонстанты" />
+        <MenuItem tableName="DEAL_TYPE" caption="Типы сделки" />
+        <MenuItem tableName="DEAL_STATE" caption="Статусы сделки" />
+        <MenuItem tableName="CURRENCY" caption="Валюты" />
+        <MenuItem tableName="REGION" caption="Регионы" />
+      </MenuItem>
+    </MenuItems>
+    <Keys>
+      <Key command="showItem" key="ctl,return"/>
+      <Key command="selectItem" key="return"/>
+      <Key command="addItem" key="ctl,add"/>
+      <Key command="removeItem" key="ctl,subtract"/>
+      <Key command="closeForm" key="ctl,q">
+        <KeyContext context="fkItem" key="escape;ctl,q"/>
+      </Key>
+      <Key command="saveChanges" key="ctl,s"/>
+      <Key command="rejectChanges" key="ctl,r"/>
+      <Key command="movePerv" key="ctl,left"/>
+      <Key command="moveNext" key="ctl,right"/>
+      <Key command="fkAddItem" key="ctl,add"/>
+      <Key command="fkSelectItem" key="ctl,return"/>
+      <Key command="refreshList" key="f5"/>
+      <Key command="uploadToExcel" key="f4"/>
+      <Key command="focusSearch" key="ctl,up"/>
+      <Key command="focusList" key="ctl,down"/>
+      <Key command="endEdit" key="ctl,s"/>
+      <Key command="cancelEdit" key="ctl,r"/>
+      <Key command="clone" key="ctl,c"/>
+    </Keys>
+    <Misc>
+      <AppSkin name="Valentine"/>
+    </Misc>
+  </AppView>
+</AppView>

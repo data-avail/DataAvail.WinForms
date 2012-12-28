@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="ADDRESSs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>0</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>65</SplitterPosition>
+    <SrchLayout name="ADDRESS">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PERSON">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TOWN">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="STREET">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BUILDING">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="FLAT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BUILDING_AUX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="FLAT_AUX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AUX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="ADDRESS">
+      <Form name="ADDRESS">
+        <Width>513</Width>
+        <Height>411</Height>
+        <WindowState>0</WindowState>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

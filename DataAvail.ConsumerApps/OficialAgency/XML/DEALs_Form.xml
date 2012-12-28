@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="DEALs">
+    <Width>1932</Width>
+    <Height>1003</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-31</LocationY>
+    <SplitterPosition>52</SplitterPosition>
+    <SrchLayout name="DEAL">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT">
+        <Checked>false</Checked>
+        <Value>116</Value>
+      </Edit>
+      <Edit name="CLIENT_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="MANAGER">
+        <Checked>true</Checked>
+        <Value>105</Value>
+      </Edit>
+      <Edit name="MANAGER_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AGENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AGENT_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="STATE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+      <Edit name="PRICEFROMAGENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PRICEFORCLIENT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PROFIT">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AGENTCURRENCY">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENTCURRENCY">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="RATE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT_BIRTH_DATE">
+        <Checked>false</Checked>
+        <Value>:</Value>
+      </Edit>
+      <Edit name="CLIENT_MOBILE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT_EMAIL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AGENT_MOBILE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="AGENT_EMAIL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="VISA_DURATION">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="VISA_COUNTRY">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CLIENT_REGION">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="DEAL">
+      <Form name="DEAL">
+        <Width>683</Width>
+        <Height>695</Height>
+        <WindowState>0</WindowState>
+        <LocationX>636</LocationX>
+        <LocationY>0</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

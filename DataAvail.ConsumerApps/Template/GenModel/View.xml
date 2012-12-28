@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataView>
+  <Table name="CVL" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="TABLE_NAME" caption="#" />
+      <Field name="COLUMN_NAME" caption="#" />
+      <Field name="CONST_VAL" caption="#" />
+      <Field name="CONST_NAME" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="PERSIST_FIELDS_STATE" caption="#" itemCaption="#">
+    <Fields />
+  </Table>
+  <Table name="CLIENT" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="FIRST_NAME" caption="#" />
+      <Field name="LAST_NAME" caption="#" />
+      <Field name="MIDDLE_NAME" caption="#" />
+      <Field name="PREFIX" caption="#" />
+      <Field name="SEX" caption="#" />
+      <Field name="BIRTH_DATE" caption="#" />
+      <Field name="STATE" caption="#" />
+      <Field name="AUX" caption="#" />
+      <Field name="TYPE" caption="#" />
+      <Field name="INS_DATE" caption="#" />
+    </Fields>
+  </Table>
+  <Table name="CONTACT" caption="#" itemCaption="#">
+    <Fields>
+      <Field name="ID" caption="#" />
+      <Field name="CLIENT" caption="#" />
+      <Field name="TAG" caption="#" />
+      <Field name="TYPE" caption="#" />
+      <Field name="AUX" caption="#" />
+    </Fields>
+  </Table>
+</DataView>

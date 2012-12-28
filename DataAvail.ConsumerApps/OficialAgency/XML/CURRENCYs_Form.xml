@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CURRENCYs">
+    <Width>1378</Width>
+    <Height>690</Height>
+    <WindowState>0</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="CURRENCY">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="MNEM">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="CURRENCY">
+      <Form name="CURRENCY">
+        <Width>513</Width>
+        <Height>206</Height>
+        <WindowState>0</WindowState>
+        <LocationX>175</LocationX>
+        <LocationY>175</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

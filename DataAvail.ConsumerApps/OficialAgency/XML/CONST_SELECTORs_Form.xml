@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CONST_SELECTORs">
+    <Width>665</Width>
+    <Height>262</Height>
+    <WindowState>0</WindowState>
+    <LocationX>441</LocationX>
+    <LocationY>278</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="CONST_SELECTOR">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TABLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="COLUMN_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_VAL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="CONST_SELECTOR">
+      <Form name="CVL">
+        <Width>427</Width>
+        <Height>332</Height>
+        <WindowState>0</WindowState>
+        <LocationX>489</LocationX>
+        <LocationY>91</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

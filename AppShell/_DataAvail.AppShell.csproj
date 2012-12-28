@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77325DAE-9322-4CC9-8AFE-7ECFE8657EED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAvail</RootNamespace>
+    <AssemblyName>DataAvail.AppShell</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppShellInitializer.cs" />
+    <Compile Include="DataAvailable\DACProperties.cs" />
+    <Compile Include="ControllerUICreator.cs" />
+    <Compile Include="DataAvailable\DAC.cs" />
+    <Compile Include="DataAdapter.cs" />
+    <Compile Include="DebugLog.cs" />
+    <Compile Include="DXBarButtonCommandItem.cs" />
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="XtraBindingControllerProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAvail.Controller\DataAvail.Controller.csproj">
+      <Project>{CFBB969A-5DF4-4A46-B324-7D06307C781C}</Project>
+      <Name>DataAvail.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.DataSetBuilder\DataAvail.DataSetParser.csproj">
+      <Project>{6CC961B5-C569-40F3-8257-A622560EAC2F}</Project>
+      <Name>DataAvail.DataSetParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Data\DataAvail.Data.csproj">
+      <Project>{B82F199A-B1DC-4496-B217-65259FF38BAC}</Project>
+      <Name>DataAvail.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.DevArt\Baio.DevArt.Data\DataAvail.DevArt.Data.csproj">
+      <Project>{6894D5F8-207E-473A-BD15-E5C8298AB220}</Project>
+      <Name>DataAvail.DevArt.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.LINQ\DataAvail.LINQ.csproj">
+      <Project>{BB50B74A-9696-4E8A-B732-1CABCA768D80}</Project>
+      <Name>DataAvail.LINQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Serialization\DataAvail.Serialization.csproj">
+      <Project>{BB7F9E7C-3DC7-4EA8-AB02-9232B82F7121}</Project>
+      <Name>DataAvail.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Threading\DataAvail.Threading.csproj">
+      <Project>{7DD77483-7577-454A-9090-3DC3379B59D1}</Project>
+      <Name>DataAvail.Threading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.Utils\DataAvail.Utils.csproj">
+      <Project>{9E3269AC-9BD4-40C3-B768-D415E19F65F9}</Project>
+      <Name>DataAvail.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.WinUtils\DataAvail.WinUtils.csproj">
+      <Project>{C860199A-94BF-403B-A4DC-5EE28EE7194C}</Project>
+      <Name>DataAvail.WinUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XObject\DataAvail.XObject.csproj">
+      <Project>{DD5B7913-B6E9-4F5C-8416-79CAE4DAB510}</Project>
+      <Name>DataAvail.XObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraBinding\DataAvail.XtraBinding.csproj">
+      <Project>{C560D674-F54D-47D4-AFA1-5B59423C8FFA}</Project>
+      <Name>DataAvail.XtraBinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraContainerBuilder\DataAvail.XtraContainerBuilder.csproj">
+      <Project>{F14D6A38-4963-4CA5-8E92-92E06803DCBB}</Project>
+      <Name>DataAvail.XtraContainerBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraContainer\DataAvail.XtraContainer.csproj">
+      <Project>{79AAF489-1C71-41D9-81C9-E092C5EA1579}</Project>
+      <Name>DataAvail.XtraContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraEditors\DataAvail.XtraEditors.csproj">
+      <Project>{93203EF3-3656-477A-B4A7-3786CCB6EB9A}</Project>
+      <Name>DataAvail.XtraEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraFormController\DataAvail.XtraFormController.csproj">
+      <Project>{E086A62A-3D6D-4975-8064-1E6AF3020ADE}</Project>
+      <Name>DataAvail.XtraFormController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraForm\DataAvail.XtraForm.csproj">
+      <Project>{C7AB8B5B-9110-4E1C-A980-81CE1E65E33B}</Project>
+      <Name>DataAvail.XtraForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraListForm\DataAvail.XtraListForm.csproj">
+      <Project>{757CF7D9-D57E-4DCC-A682-D39C67B99F3D}</Project>
+      <Name>DataAvail.XtraListForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAvail.XtraReportForm\DataAvail.XtraReportForm.csproj">
+      <Project>{3DD4D10F-C2B5-4012-A676-5AF0B83715FF}</Project>
+      <Name>DataAvail.XtraReportForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DX\DataAvail.DX.XtraListForm\DataAvail.DX.XtraListForm.csproj">
+      <Project>{BF7A4BC7-6C6E-4B40-B85E-AAEEB4686E19}</Project>
+      <Name>DataAvail.DX.XtraListForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DX\DataAvail.DX.XtraReportForm\DataAvail.DX.XtraReportForm.csproj">
+      <Project>{07065F54-5236-4C24-B68A-275B6510191E}</Project>
+      <Name>DataAvail.DX.XtraReportForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

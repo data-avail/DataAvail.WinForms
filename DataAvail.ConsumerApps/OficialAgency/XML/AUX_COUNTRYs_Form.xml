@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="AUX_COUNTRYs">
+    <Width>593</Width>
+    <Height>261</Height>
+    <WindowState>0</WindowState>
+    <LocationX>439</LocationX>
+    <LocationY>280</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="AUX_COUNTRY">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="AUX_COUNTRY">
+      <Form name="COUNTRY">
+        <Width>382</Width>
+        <Height>172</Height>
+        <WindowState>0</WindowState>
+        <LocationX>721</LocationX>
+        <LocationY>277</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

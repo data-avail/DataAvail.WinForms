@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSet adapterType="SqlServer" connectionString="Data Source=BAIO-PC\BAIO;Initial Catalog=company;Integrated Security=True;Persist Security Info=True" schemeName="dbo" useStdCommands="true" defaultTablePrefix="" typeConverter="">
+  <Table name="CVL">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="TABLE_NAME" type="string,50" />
+      <Field name="COLUMN_NAME" type="string,50" />
+      <Field name="CONST_VAL" type="int" />
+      <Field name="CONST_NAME" type="string,50" />
+    </Fields>
+  </Table>
+  <Table name="PERSIST_FIELDS_STATE">
+    <Fields />
+  </Table>
+  <Table name="CLIENT">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="FIRST_NAME" type="string,50" />
+      <Field name="LAST_NAME" type="string,50" nullable="true" />
+      <Field name="MIDDLE_NAME" type="string,50" nullable="true" />
+      <Field name="PREFIX" type="int" nullable="true" />
+      <Field name="SEX" type="int" />
+      <Field name="BIRTH_DATE" type="date" nullable="true" />
+      <Field name="STATE" type="int" />
+      <Field name="AUX" type="string,250" nullable="true" />
+      <Field name="TYPE" type="int" />
+      <Field name="INS_DATE" type="date" />
+    </Fields>
+  </Table>
+  <Table name="CONTACT">
+    <Fields>
+      <Field name="ID" type="int" pk="true" />
+      <Field name="CLIENT" type="int" />
+      <Field name="TAG" type="string,50" nullable="true" />
+      <Field name="TYPE" type="int" nullable="true" />
+      <Field name="AUX" type="string,50" nullable="true" />
+    </Fields>
+  </Table>
+  <Relations>
+    <Relation name="CONTACT_CLIENT_CLIENT" childField="CLIENT" childTable="CONTACT" parentField="ID" parentTable="CLIENT" />
+  </Relations>
+</DataSet>

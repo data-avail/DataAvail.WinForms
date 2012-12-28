@@ -1,0 +1,64 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">false</property>
+  <property name="Columns" iskey="true" value="11">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">64</property>
+      <property name="Name">colID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">128</property>
+      <property name="Name">colFIRST_NAME</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">170</property>
+      <property name="Name">colLAST_NAME</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Width">87</property>
+      <property name="Name">colMIDDLE_NAME</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">63</property>
+      <property name="Name">colSEX</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Width">356</property>
+      <property name="Name">colPREFIX</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">85</property>
+      <property name="Name">colBIRTH_DATE</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Width">86</property>
+      <property name="Name">colSTATE</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Width">43</property>
+      <property name="Name">colTYPE</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">227</property>
+      <property name="Name">colNAME</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Name">colREGION</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+  </property>
+  <property name="MRUFilters">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF5EZXZFeHByZXNzLlh0cmFHcmlkLnYxMC4yLCBWZXJzaW9uPTEwLjIuMTAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBQEAAAA2RGV2RXhwcmVzcy5YdHJhR3JpZC5WaWV3cy5CYXNlLk1SVVZpZXdGaWx0ZXJDb2xsZWN0aW9uAQAAABNDb2xsZWN0aW9uQmFzZStsaXN0AxxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AgAAAAkDAAAABAMAAAAcU3lzdGVtLkNvbGxlY3Rpb25zLkFycmF5TGlzdAMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBQAACAgJBAAAAAoAAAAMAAAAEAQAAAAQAAAACQUAAAAJBgAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAAkNAAAACQ4AAAANBgwPAAAAWkRldkV4cHJlc3MuRGF0YS52MTAuMiwgVmVyc2lvbj0xMC4yLjEwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUFAAAAKURldkV4cHJlc3MuWHRyYUdyaWQuVmlld3MuQmFzZS5WaWV3RmlsdGVyAgAAABhmTm9uQ29sdW1uRmlsdGVyQ3JpdGVyaWETQ29sbGVjdGlvbkJhc2UrbGlzdAQDKkRldkV4cHJlc3MuRGF0YS5GaWx0ZXJpbmcuQ3JpdGVyaWFPcGVyYXRvcg8AAAAcU3lzdGVtLkNvbGxlY3Rpb25zLkFycmF5TGlzdAIAAAAKCRAAAAABBgAAAAUAAAAKCREAAAABBwAAAAUAAAAKCRIAAAABCAAAAAUAAAAKCRMAAAABCQAAAAUAAAAKCRQAAAABCgAAAAUAAAAKCRUAAAABCwAAAAUAAAAKCRYAAAABDAAAAAUAAAAKCRcAAAABDQAAAAUAAAAKCRgAAAABDgAAAAUAAAAKCRkAAAABEAAAAAMAAAAJGgAAAAEAAAADAAAAAREAAAADAAAACRsAAAABAAAAAwAAAAESAAAAAwAAAAkcAAAAAQAAAAMAAAABEwAAAAMAAAAJHQAAAAEAAAADAAAAARQAAAADAAAACR4AAAABAAAAAwAAAAEVAAAAAwAAAAkfAAAAAQAAAAMAAAABFgAAAAMAAAAJIAAAAAEAAAADAAAAARcAAAADAAAACSEAAAABAAAAAwAAAAEYAAAAAwAAAAkiAAAAAQAAAAMAAAABGQAAAAMAAAAJIwAAAAEAAAADAAAAEBoAAAAEAAAACSQAAAANAxAbAAAABAAAAAklAAAADQMQHAAAAAQAAAAJJgAAAA0DEB0AAAAEAAAACScAAAANAxAeAAAABAAAAAkoAAAADQMQHwAAAAQAAAAJKQAAAA0DECAAAAAEAAAACSoAAAANAxAhAAAABAAAAAkrAAAADQMQIgAAAAQAAAAJLAAAAA0DECMAAAAEAAAACS0AAAANAwwuAAAAGURldkV4cHJlc3MuWHRyYUdyaWQudjEwLjIFJAAAADNEZXZFeHByZXNzLlh0cmFHcmlkLlZpZXdzLkJhc2UuVmlld0NvbHVtbkZpbHRlckluZm8CAAAABkZpbHRlcgZDb2x1bW4EASxEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuQ29sdW1uRmlsdGVySW5mby4AAAAuAAAACS8AAAAGMAAAAAdjb2xOQU1FASUAAAAkAAAACTEAAAAJMAAAAAEmAAAAJAAAAAkzAAAACTAAAAABJwAAACQAAAAJNQAAAAkwAAAAASgAAAAkAAAACTcAAAAJMAAAAAEpAAAAJAAAAAk5AAAACTAAAAABKgAAACQAAAAJOwAAAAkwAAAAASsAAAAkAAAACT0AAAAJMAAAAAEsAAAAJAAAAAk/AAAACTAAAAABLQAAACQAAAAJQQAAAAkwAAAABS8AAAAsRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkNvbHVtbkZpbHRlckluZm8FAAAABFR5cGUES2luZAtEaXNwbGF5VGV4dAxGaWx0ZXJTdHJpbmcFVmFsdWUAAAEBAggILgAAAAEAAAABAAAABkMAAAAABkQAAAAaW05BTUVdIExpa2UgJyXQu9C+0YDRgNC4JScKATEAAAAvAAAAAQAAAAEAAAAJQwAAAAZGAAAAGltOQU1FXSBMaWtlICcl0LPQtdC50YLRgSUnCgEzAAAALwAAAAEAAAABAAAACUMAAAAGSAAAABVbTkFNRV0gTGlrZSAnJXR0dHR0JScKATUAAAAvAAAAAQAAAAEAAAAJQwAAAAZKAAAAEVtOQU1FXSBMaWtlICclICUnCgE3AAAALwAAAAEAAAABAAAACUMAAAAGTAAAABhbTkFNRV0gTGlrZSAnJdC40LLQsNC9JScKATkAAAAvAAAAAQAAAAEAAAAJQwAAAAZOAAAAEFtOQU1FXSBMaWtlICclJScKATsAAAAvAAAAAQAAAAEAAAAJQwAAAAZQAAAAEVtOQU1FXSBMaWtlICclYSUnCgE9AAAALwAAAAEAAAABAAAACUMAAAAGUgAAABNbTkFNRV0gTGlrZSAnJXNzcyUnCgE/AAAALwAAAAEAAAABAAAACUMAAAAGVAAAABZbTkFNRV0gTGlrZSAnJdC/0LDQsSUnCgFBAAAALwAAAAEAAAABAAAACUMAAAAGVgAAABhbTkFNRV0gTGlrZSAnJdC/0LXRgNCyJScKCw==</property>
+  <property name="ActiveFilterString" />
+  <property name="SortInfo">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF5EZXZFeHByZXNzLlh0cmFHcmlkLnYxMC4yLCBWZXJzaW9uPTEwLjIuMTAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBQEAAAA4RGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb0NvbGxlY3Rpb24EAAAACmdyb3VwQ291bnQFY2xvbmUPY2xvbmVHcm91cENvdW50E0NvbGxlY3Rpb25CYXNlK2xpc3QAAwADCLMBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvLCBEZXZFeHByZXNzLlh0cmFHcmlkLnYxMC4yLCBWZXJzaW9uPTEwLjIuMTAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhXV0IHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAAAAAAAAkDAAAAAAAAAAkEAAAABAMAAACzAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbywgRGV2RXhwcmVzcy5YdHJhR3JpZC52MTAuMiwgVmVyc2lvbj0xMC4yLjEwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAAAwRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb1tdAgAAAAgICQUAAAAAAAAAAAAAAAQEAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QDAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgUAAAgICQYAAAABAAAABAAAAAcFAAAAAAEAAAAAAAAABC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAABAGAAAABAAAAAkHAAAADQMMCAAAABlEZXZFeHByZXNzLlh0cmFHcmlkLnYxMC4yBQcAAAAuRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbwIAAAAJU29ydE9yZGVyCkNvbHVtbk5hbWUAAQgIAAAAAQAAAAYJAAAACGNvbFNUQVRFCw==</property>
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

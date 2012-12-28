@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="AUX_CVLs">
+    <Width>474</Width>
+    <Height>263</Height>
+    <WindowState>0</WindowState>
+    <LocationX>464</LocationX>
+    <LocationY>237</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="AUX_CVL">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TABLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="COLUMN_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_VAL">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="CONST_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="AUX_CVL">
+      <Form name="CVL">
+        <Width>513</Width>
+        <Height>150</Height>
+        <WindowState>0</WindowState>
+        <LocationX>631</LocationX>
+        <LocationY>370</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="PERSONs">
+    <Width>1932</Width>
+    <Height>1003</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-31</LocationY>
+    <SplitterPosition>29</SplitterPosition>
+    <SrchLayout name="PERSON">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value>52</Value>
+      </Edit>
+      <Edit name="FIRST_NAME">
+        <Checked>false</Checked>
+        <Value>errter</Value>
+      </Edit>
+      <Edit name="LAST_NAME">
+        <Checked>false</Checked>
+        <Value>агент</Value>
+      </Edit>
+      <Edit name="MIDDLE_NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="SEX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="PREFIX">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="BIRTH_DATE">
+        <Checked>false</Checked>
+        <Value>07-12-88:29-12-10</Value>
+      </Edit>
+      <Edit name="STATE">
+        <Checked>false</Checked>
+        <Value>0</Value>
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value>a</Value>
+      </Edit>
+      <Edit name="REGION">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="PERSON">
+      <Form name="PERSON">
+        <Width>628</Width>
+        <Height>397</Height>
+        <WindowState>0</WindowState>
+        <LocationX>278</LocationX>
+        <LocationY>202</LocationY>
+        <Layout name="PERSON">
+          <Grid name="ADDRESS">
+            <Form name="ADDRESS">
+              <Width>682</Width>
+              <Height>491</Height>
+              <WindowState>0</WindowState>
+              <LocationX>640</LocationX>
+              <LocationY>182</LocationY>
+            </Form>
+          </Grid>
+          <Grid name="CONTACT">
+            <Form name="CONTACT">
+              <Width>476</Width>
+              <Height>240</Height>
+              <WindowState>0</WindowState>
+              <LocationX>514</LocationX>
+              <LocationY>205</LocationY>
+            </Form>
+          </Grid>
+        </Layout>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

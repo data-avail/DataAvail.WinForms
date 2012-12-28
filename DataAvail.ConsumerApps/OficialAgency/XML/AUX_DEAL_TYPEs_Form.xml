@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="AUX_DEAL_TYPEs">
+    <Width>340</Width>
+    <Height>487</Height>
+    <WindowState>0</WindowState>
+    <LocationX>936</LocationX>
+    <LocationY>73</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="AUX_DEAL_TYPE">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="DAYS">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="TYPE">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="AUX_DEAL_TYPE">
+      <Form name="DEAL_TYPE">
+        <Width>542</Width>
+        <Height>218</Height>
+        <WindowState>0</WindowState>
+        <LocationX>492</LocationX>
+        <LocationY>279</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

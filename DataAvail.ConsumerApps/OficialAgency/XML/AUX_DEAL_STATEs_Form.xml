@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="AUX_DEAL_STATEs">
+    <Width>363</Width>
+    <Height>405</Height>
+    <WindowState>0</WindowState>
+    <LocationX>731</LocationX>
+    <LocationY>130</LocationY>
+    <SplitterPosition>0</SplitterPosition>
+    <SrchLayout name="AUX_DEAL_STATE">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+    </SrchLayout>
+    <Grid name="AUX_DEAL_STATE">
+      <Form name="DEAL_STATE">
+        <Width>513</Width>
+        <Height>183</Height>
+        <WindowState>0</WindowState>
+        <LocationX>800</LocationX>
+        <LocationY>310</LocationY>
+      </Form>
+    </Grid>
+  </Form>
+</Root>

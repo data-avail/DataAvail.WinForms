@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Form name="CLIENTs">
+    <Width>1093</Width>
+    <Height>539</Height>
+    <WindowState>2</WindowState>
+    <LocationX>-8</LocationX>
+    <LocationY>-30</LocationY>
+    <SplitterPosition>47</SplitterPosition>
+    <SrchLayout name="CLIENT">
+      <Edit name="ID">
+        <Checked>false</Checked>
+        <Value />
+      </Edit>
+      <Edit name="NAME">
+        <Checked>true</Checked>
+        <Value></Value>
+      </Edit>
+    </SrchLayout>
+  </Form>
+</Root>
